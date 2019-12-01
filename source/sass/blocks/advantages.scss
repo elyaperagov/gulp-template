@@ -1,0 +1,16 @@
+.advantages__list {
+  @include list();
+  @include wrapper();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+}
+
+.advantages__item {
+  min-height: 300px;
+  flex: 1 0 50%;
+  border: 1px solid #ebebeb;
+}

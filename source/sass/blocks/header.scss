@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+}
+
+.header__wrapper {
+  background: #1b2d37;
+  background-image: url("../img/image.png");
+  color: #ffffff;
+  padding-top: 20px;
+
+  @media (min-width: $desktops) {
+    min-height: 950px;
+  }
+}
+
+.header__inner {
+  @include wrapper;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

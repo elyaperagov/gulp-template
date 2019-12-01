@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.logo__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.logo__paragraph {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+}
