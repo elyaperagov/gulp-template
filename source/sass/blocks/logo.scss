@@ -4,7 +4,7 @@
   flex-grow: 1;
 }
 
-.logo__title {
+.logo-header__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -13,11 +13,17 @@
   margin: 0;
 }
 
-.logo__paragraph {
+.logo-header__paragraph {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   margin: 0;
+}
+
+.logo-header {
+  display: flex;
+  flex-basis: 50%;
+  padding-left: 20px;
 }

@@ -1,4 +1,10 @@
 .button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
   background: #00b2ff;
   border-radius: 5px;
   color: #ffffff;
@@ -7,6 +13,17 @@
 
 .button--contacts {
   background-color: transparent;
-  padding: 10px 12px;
+  padding: 14px 28px;
   border: 1px solid #ffffff;
+  letter-spacing: 0.7px;
+}
+
+.button--info {
+  border-radius: 5px;
+  padding: 18px 45px;
+  margin-top: 43px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.8px;
 }

@@ -3,6 +3,24 @@
   margin-top: 180px;
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.info__general {
+  padding: 41px 0 10px 15px;
+  max-width: 720px;
+}
+
+.info::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/chip.png");
+  z-index: 10;
+  width: 705px;
+  height: 515px;
+  background-repeat: no-repeat;
+  top: -16px;
+  right: 161px;
 }
 
 .info__header {
@@ -13,6 +31,8 @@
   line-height: 94px;
   text-transform: uppercase;
   white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.07em;
 }
 
 .info__paragraph {
@@ -21,6 +41,22 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
+  margin: 0;
+}
+
+.info__inner {
+  position: relative;
+  padding: 28px 0 0 97px;
+}
+
+.info__inner::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  height: 2px;
+  width: 66px;
+  left: 5px;
+  top: 45px;
 }
 
 .info__picture {

@@ -5,11 +5,12 @@
 .header__wrapper {
   background: #1b2d37;
   background-image: url("../img/image.png");
+  background-size: cover;
   color: #ffffff;
-  padding-top: 20px;
+  padding-top: 34px;
 
   @media (min-width: $desktops) {
-    min-height: 950px;
+    min-height: 880px;
   }
 }
 
