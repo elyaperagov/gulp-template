@@ -1,22 +1,15 @@
-.header {
-  position: relative;
-}
-
 .header__wrapper {
   background: #1b2d37;
   background-image: url("../img/image.png");
   background-size: cover;
   color: #ffffff;
-  padding-top: 34px;
-
-  @media (min-width: $desktops) {
-    min-height: 880px;
-  }
 }
 
 .header__inner {
-  @include wrapper;
+  max-width: 1460px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 35px 17px 0 32px;
 }

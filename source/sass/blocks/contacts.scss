@@ -1,5 +1,4 @@
 .contacts {
-  flex-grow: 1;
   font-size: 16px;
   line-height: 18px;
 }
@@ -13,11 +12,15 @@
   padding: 3px 0;
 }
 
-.contacts__item:nth-child(1),
-.contacts__item:nth-child(2) {
-  padding-left: 40px;
+.contacts__item {
+  padding-left: 45px;
   text-align: center;
+
+  &:nth-child(2) {
+    padding-left: 95px;
+  }
 }
+
 
 .contacts__link {
   color: #ffffff;

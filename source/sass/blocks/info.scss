@@ -1,26 +1,27 @@
 .info {
-  @include wrapper;
-  margin-top: 180px;
   display: flex;
   flex-direction: row;
-  position: relative;
+  //position: relative;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 180px 0 275px 0;
 }
 
 .info__general {
-  padding: 41px 0 10px 15px;
-  max-width: 720px;
+  padding: 44px 0 0 32px;
+  max-width: 740px;
+  position: relative;
 }
 
-.info::before {
+.info__general::before {
   position: absolute;
   content: "";
-  background-image: url("../img/chip.png");
+  display: block;
+  background-image: url("../img/triangle.svg");
   z-index: 10;
   width: 705px;
   height: 515px;
   background-repeat: no-repeat;
-  top: -16px;
-  right: 161px;
 }
 
 .info__header {
@@ -60,5 +61,15 @@
 }
 
 .info__picture {
-  max-width: 705px;
+  position: absolute;
+  right: 0;
+}
+
+.info__picture img {
+  position: relative;
+  width: 705px;
+  height: 515px;
+  top: 2px;
+  left: 51px;
+  z-index: 2;
 }

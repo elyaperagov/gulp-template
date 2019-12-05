@@ -10,24 +10,6 @@
   cursor: pointer;
 }
 
-@mixin wrapper() {
-  //width: 320px;
-  padding-left: 14px;
-  padding-right: 14px;
-  margin: 0 auto;
-
-  @media (min-width: $tablets) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  @media (min-width: $desktops) {
-    //width: 1024px;
-    padding-right: 235px;
-    padding-left: 235px;
-  }
-}
-
 @mixin visually-hidden() {
   position: absolute;
   overflow: hidden;
