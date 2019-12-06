@@ -1,0 +1,49 @@
+.offers {
+  background-color: #1b2d37;
+}
+
+.offers__inner {
+  max-width: 1220px;
+  padding: 90px 25px 0;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.offers__list {
+  @include list;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+.offers__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+}
+
+.offers__item {
+  position: relative;
+  background-repeat: no-repeat;
+
+  &--production {
+    background-image: url("../img/production.jpg");
+    width: 416px;
+    height: 727.71px;
+  }
+
+  &--installation {
+    background-image: url("../img/installation.jpg");
+    width: 416px;
+    height: 727.71px;
+  }
+
+  &--equipment {
+    background-image: url("../img/equipment.jpg");
+    width: 416px;
+    height: 727.71px;
+  }
+}
