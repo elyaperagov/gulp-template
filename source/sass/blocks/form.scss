@@ -1,0 +1,20 @@
+.form {
+  background-color: #00b2ff;
+}
+
+.form__inner {
+  max-width: 1220px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 25px 115px;
+}
+
+.form__inner::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/paper_airplane.png");
+  width: 511px;
+  height: 288px;
+  top: 159px;
+  left: 0;
+}

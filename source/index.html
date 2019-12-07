@@ -149,36 +149,51 @@
       <div class="offers__inner">
         <h3 class="offers__title">Service Device предлагает следующие товары и услуги</h3>
         <ul class="offers__list">
-          <li class="offers__item offers__item--production">Производство печатных плат</li>
-          <li class="offers__item offers__item--installation">Монтаж печатных плат</li>
-          <li class="offers__item offers__item--equipment">Комплектующие для светотехники</li>
+          <li class="offers__item offers__item--production">
+            <p class="offers__paragraph">Производство печатных плат</p>
+          </li>
+          <li class="offers__item offers__item--installation">
+            <p class="offers__paragraph">Монтаж печатных плат</p>
+          </li>
+          <li class="offers__item offers__item--equipment">
+            <p class="offers__paragraph">Комплектующие для светотехники</p>
+          </li>
         </ul>
       </div>
     </section>
-    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="feedback__fieldset">
-        <p class="feedback__item">
-          <label class="feedback__label visually-hidden" for="feedback-name">Ваше имя:</label>
-          <input class="feedback__field" id="feedback-name" name="name" type="text" placeholder="Имя">
-        </p>
-        <p class="feedback__item">
-          <label class="feedback__label visually-hidden" for="feedback-phone">Ваш телефон:</label>
-          <input class="feedback__field" id="feedback-phone" name="phone" type="tel" placeholder="Телефон">
-        </p>
-        <p class="feedback__item">
-          <label class="feedback__label" for="feedback-text">Ваш вопрос</label>
-          <textarea class="feedback__text" id="feedback-text" name="text" rows="10" cols="80" placeholder="Ваш вопрос"></textarea>
-        </p>
-      </fieldset>
-      <div class="feedback__confirm">
-        <button class="button button--contacts" type="submit">Задать вопрос</button>
-        <div class="feedback__checkbox">
-          <label class="feedback__label" for="feedback-confirm"></label>
-          <input type="checkbox" id="feedback-confirm" name="confirm">
-          <a href="#" class="feedback-link">Я согласен на обработку персональных данных</a>
-        </div>
+    <section class="form">
+      <div class="form__inner">
+        <!--<div class ="form__picture">
+          <img src="img/paper_airplane.png" alt="Бумажный самолёт">
+        </div>-->
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+          <h3 class="feedback__title">Остались вопросы? Задайте их нам!</h3>
+          <p class="feedback__paragraph">Мы проконсультируем Вас бесплатно</p>
+          <div class="feedback__fieldset">
+            <p class="feedback__item">
+              <label class="feedback__label visually-hidden" for="feedback-name">Ваше имя:</label>
+              <input class="feedback__field" id="feedback-name" name="name" type="text" placeholder="Имя">
+            </p>
+            <p class="feedback__item">
+              <label class="feedback__label visually-hidden" for="feedback-phone">Ваш телефон:</label>
+              <input class="feedback__field" id="feedback-phone" name="phone" type="tel" placeholder="Телефон">
+            </p>
+            <p class="feedback__item">
+              <label class="feedback__label visually-hidden" for="feedback-text">Ваш вопрос</label>
+              <textarea class="feedback__text" id="feedback-text" name="text" type="text" placeholder="Ваш вопрос"></textarea>
+            </p>
+          </div>
+          <div class="feedback__confirm">
+            <button class="button button--question" type="submit">Задать вопрос</button>
+            <div class="feedback__checkbox">
+              <label class="feedback__label" for="feedback-confirm"></label>
+              <input type="checkbox" id="feedback-confirm" name="confirm">
+              <a href="#" class="feedback-link">Я согласен на обработку персональных данных</a>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="logo-footer">

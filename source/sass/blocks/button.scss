@@ -9,30 +9,35 @@
   border-radius: 5px;
   color: #ffffff;
   border: none;
-}
 
-.button--contacts {
-  background-color: transparent;
-  padding: 14px 28px;
-  border: 1px solid #ffffff;
-  letter-spacing: 0.7px;
-}
+  &--contacts {
+    background-color: transparent;
+    padding: 14px 28px;
+    border: 1px solid #ffffff;
+    letter-spacing: 0.7px;
+  }
 
-.button--info {
-  border-radius: 5px;
-  padding: 18px 45px;
-  margin-top: 43px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.8px;
-}
+  &--info {
+    border-radius: 5px;
+    padding: 18px 45px;
+    margin-top: 43px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.8px;
+  }
 
-.button--details {
-  color: #00b2ff;
-  background-color: transparent;
-  padding: 14px 50px;
-  border: 1px solid #00b2ff;
-  letter-spacing: 0.7px;
-  margin-top: 14px;
+  &--details {
+    color: #00b2ff;
+    background-color: transparent;
+    padding: 14px 50px;
+    border: 1px solid #00b2ff;
+    letter-spacing: 0.7px;
+    margin-top: 14px;
+  }
+
+  &--question {
+    width: 270px;
+    border: 1px solid #ffffff;
+  }
 }

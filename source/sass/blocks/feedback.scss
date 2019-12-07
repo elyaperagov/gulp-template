@@ -1,0 +1,73 @@
+.feedback {
+  color: #ffffff;
+  padding-left: 51%;
+  padding-top: 90px;
+}
+
+.feedback__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+}
+
+.feedback__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 33px;
+}
+
+.feedback__field {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 270px;
+  height: 50px;
+}
+
+.feedback__text {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 570px;
+  height: 154px;
+  margin-top: 10px;
+}
+
+.form input[type="tel"]::placeholder,
+.form input[type="text"]::placeholder {
+  color: #ffffff;
+  padding: 10px 17px;
+}
+
+.form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  padding: 10px 17px;
+}
+
+.form textarea::-moz-placeholder {
+  color: #ffffff;
+  padding: 10px 17px;
+}
+
+.feedback__confirm {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.feedback__checkbox {
+  width: 270px;
+}

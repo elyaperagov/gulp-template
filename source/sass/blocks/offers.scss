@@ -4,7 +4,7 @@
 
 .offers__inner {
   max-width: 1220px;
-  padding: 90px 25px 0;
+  padding: 90px 25px 80px;
   margin: 0 auto;
   color: #ffffff;
 }
@@ -13,6 +13,7 @@
   @include list;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 50px 0;
 }
 
@@ -25,25 +26,54 @@
   margin: 0;
 }
 
+.offers__paragraph {
+  margin: 0;
+  width: 260px;
+  padding: 53px 47px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 .offers__item {
   position: relative;
   background-repeat: no-repeat;
+  width: 370px;
+  height: 620px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #00b2ff;
+    width: 63px;
+    height: 63px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/arrow.svg");
+    width: 8px;
+    height: 10px;
+    z-index: 10;
+    bottom: 25px;
+    right: 25px;
+    background-repeat: no-repeat;
+  }
 
   &--production {
     background-image: url("../img/production.jpg");
-    width: 416px;
-    height: 727.71px;
   }
 
   &--installation {
     background-image: url("../img/installation.jpg");
-    width: 416px;
-    height: 727.71px;
   }
 
   &--equipment {
     background-image: url("../img/equipment.jpg");
-    width: 416px;
-    height: 727.71px;
   }
 }
