@@ -1,0 +1,10 @@
+.copyright {
+  flex-grow: 1;
+  min-height: 52px;
+}
+
+.copyright__list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+}

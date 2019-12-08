@@ -5,9 +5,13 @@
   font-size: 25px;
   line-height: 29px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-top: 8px;
 }
 
-.logo-header__paragraph {
+.logo-header__text {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;

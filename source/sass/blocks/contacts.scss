@@ -1,10 +1,7 @@
-.contacts {
+.contacts__list {
+  @include list;
   font-size: 16px;
   line-height: 18px;
-}
-
-.contacts__list {
-  @include list();
   display: flex;
   flex-direction: row;
   justify-content: space-between;
