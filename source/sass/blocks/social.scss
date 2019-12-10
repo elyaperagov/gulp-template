@@ -1,4 +1,9 @@
 .social__list {
   @include list;
   display: flex;
+  padding-top: 52px;
+}
+
+.social__item {
+  padding-right: 16px;
 }

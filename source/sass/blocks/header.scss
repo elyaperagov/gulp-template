@@ -1,7 +1,7 @@
 .header {
   background: #1b2d37;
-  background-image: url("../img/chip.png"), url("../img/image.png");
-  background-size: 705px 515px, cover;
+  background-image: url("../img/triangle.svg"), url("../img/chip.png"), url("../img/image.png");
+  background-size: cover, 705px 515px, cover;
   background-repeat: no-repeat;
   background-position: 85.5% 71%;
   color: #ffffff;
@@ -13,5 +13,5 @@
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  padding: 28px 25px 0;
+  padding: 28px 25px 0 20px;
 }

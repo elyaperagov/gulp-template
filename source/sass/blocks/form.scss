@@ -1,5 +1,6 @@
 .form {
   background-color: #00b2ff;
+  //background-image: url("../img/triangle.svg");
 }
 
 .form__inner {
@@ -8,6 +9,12 @@
   margin: 0 auto;
   padding: 0 25px 115px;
 }
+/*
+.form__inner::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/triangle.svg");
+}*/
 
 .form__inner::before {
   position: absolute;

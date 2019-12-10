@@ -1,3 +1,9 @@
+.contents {
+  margin-left: 210px;
+  margin-right: 232px;
+  width: 420px;
+}
+
 .contents__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -6,9 +12,26 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .contents__list {
+  @include list;
   display: flex;
   flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.contents__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents__link {
+  text-decoration: none;
+  color: #1b2d37;
+  opacity: 0.5;
 }

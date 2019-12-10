@@ -2,4 +2,26 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer-contacts__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.footer-contacts__phone {
+  text-decoration: none;
+  color: #1b2d37;
+  opacity: 0.5;
 }

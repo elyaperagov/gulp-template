@@ -6,4 +6,27 @@
 .logo-footer__wrapper {
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
+}
+
+.logo-footer__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+.logo-footer__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
 }
