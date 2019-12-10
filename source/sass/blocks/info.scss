@@ -5,12 +5,21 @@
   max-width: 1460px;
   margin: 0 auto;
   padding: 190px 0 275px 0;
+
+  @media (max-width: $tablets-max) {
+    padding: 77px 0 275px 0;
+  }
 }
 
 .info__general {
   padding: 41px 0 0 19px;
   max-width: 740px;
   position: relative;
+
+  @media (max-width: $tablets-max) {
+    padding: 41px 0 0 78px;
+    max-width: 600px;
+  }
 }
 /*
 .info__general::before {
@@ -34,6 +43,12 @@
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.07em;
+
+  @media (max-width: $tablets-max) {
+    font-size: 60px;
+    line-height: 70px;
+    white-space: normal;
+  }
 }
 
 .info__paragraph {

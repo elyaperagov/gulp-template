@@ -18,8 +18,14 @@
   }
 }
 
-
 .contacts__link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.contacts__email,
+.contacts__phone {
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
 }

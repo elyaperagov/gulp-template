@@ -5,6 +5,13 @@
   background-repeat: no-repeat;
   background-position: 85.5% 71%;
   color: #ffffff;
+
+  @media (max-width: $tablets-max) {
+    background-image: url("../img/image.png");
+    color: #ffffff;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
 }
 
 .header__inner {
@@ -14,4 +21,8 @@
   align-items: center;
   margin: 0 auto;
   padding: 28px 25px 0 20px;
+
+  @media (max-width: $tablets-max) {
+    padding: 8px 25px 0 20px;
+  }
 }
