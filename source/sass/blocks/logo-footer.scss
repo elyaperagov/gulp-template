@@ -1,12 +1,36 @@
 .logo-footer {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablets-max) {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+}
+
+.logo-footer__copyright {
+  display: none;
+
+  @media (max-width: $tablets-max) {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
 }
 
 .logo-footer__wrapper {
   display: flex;
   flex-direction: row;
-  padding-top: 15px;
+
+  @media (max-width: $tablets-max) {
+    padding-right: 37px;
+  }
 }
 
 .logo-footer__title {

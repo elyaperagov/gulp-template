@@ -2,6 +2,13 @@
   color: #ffffff;
   padding-left: 51%;
   padding-top: 90px;
+
+  @media (max-width: $tablets-max) {
+    padding-top: 81px;
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 590px;
+  }
 }
 
 .feedback__fieldset {
@@ -19,6 +26,11 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
+
+  @media (max-width: $tablets-max) {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
 }
 
 .feedback__paragraph {
@@ -29,13 +41,21 @@
   margin: 0;
   padding-top: 10px;
   padding-bottom: 33px;
+
+  @media (max-width: $tablets-max) {
+    padding-top: 17px;
+  }
 }
 
 .feedback__field {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   width: 270px;
-  height: 50px;
+  height: 52px;
+
+  @media (max-width: $tablets-max) {
+    width: 280px;
+  }
 }
 
 .feedback__text {
@@ -44,6 +64,11 @@
   width: 570px;
   height: 154px;
   margin-top: 10px;
+
+  @media (max-width: $tablets-max) {
+    width: 591px;
+    min-height: 160px;
+  }
 }
 
 .form input[type="tel"]::placeholder,
@@ -104,4 +129,15 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.feedback__item {
+  @media (max-width: $tablets-max) {
+    margin-top: 21px;
+    margin-bottom: 10px;
+
+    &--textarea {
+      margin-bottom: 18px;
+    }
+  }
 }

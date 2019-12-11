@@ -5,8 +5,15 @@
 .footer__inner {
   max-width: 1460px;
   margin: 0 auto;
-  padding: 50px 25px 0 20px;
+  padding: 50px 25px 0 25px;
   min-height: 279px;
   display: flex;
   //justify-content: space-between;
+
+  @media (max-width: $tablets-max) {
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }

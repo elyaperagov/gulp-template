@@ -3,12 +3,23 @@
   padding: 38px 25px 76px;
   margin: 0 auto;
   display: flex;
+
+  @media (max-width: $tablets-max) {
+    padding: 25px 25px 54px;
+  }
 }
 
 .about__picture {
   flex-shrink: 0;
-  //transform: translateX(-30px);
   padding-top: 42px;
+
+  @media (max-width: $tablets-max) {
+    padding-top: 0;
+  }
+}
+
+.about__picture img {
+  width: 133px;
 }
 
 .about__title {
@@ -18,12 +29,28 @@
   font-size: 36px;
   line-height: 51px;
   margin: 30px 0 11px;
+
+  @media (max-width: $tablets-max) {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin: 3px 0 11px;
+  }
 }
 
 .about__paragraph {
-  margin: 23px 0;
+  margin: 22px 0;
 }
 
 .about__info {
   padding: 0 10px 0 65px;
+
+  @media (max-width: $tablets-max) {
+    padding: 0 10px 0 55px;
+  }
+}
+
+.about__info span {
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
 }

@@ -29,6 +29,11 @@
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.8px;
+
+    @media (max-width: $tablets-max) {
+      padding: 18px 32px;
+      margin-top: 56px;
+    }
   }
 
   &--details {
@@ -38,6 +43,10 @@
     border: 1px solid #00b2ff;
     letter-spacing: 0.7px;
     margin-top: 14px;
+
+    @media (max-width: $tablets-max) {
+      margin-top: 18px;
+    }
   }
 
   &--question {
