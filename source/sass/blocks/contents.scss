@@ -1,11 +1,10 @@
 .contents {
-  margin-left: 210px;
-  margin-right: 232px;
-  width: 420px;
+  width: 43%;
 
   @media (max-width: $tablets-max) {
     margin-left: 0;
     margin-right: 0;
+    width: 50%;
   }
 }
 
@@ -33,6 +32,10 @@
 .contents__inner {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablets-max) {
+    flex-direction: column;
+  }
 }
 
 .contents__link {

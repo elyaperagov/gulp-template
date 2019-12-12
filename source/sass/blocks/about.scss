@@ -19,7 +19,9 @@
 }
 
 .about__picture img {
-  width: 133px;
+  @media (max-width: $tablets-max) {
+    width: 133px;
+  }
 }
 
 .about__title {

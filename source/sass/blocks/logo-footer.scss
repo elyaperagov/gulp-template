@@ -1,6 +1,7 @@
 .logo-footer {
   display: flex;
   flex-direction: column;
+  width: 30%;
 
   @media (max-width: $tablets-max) {
     display: flex;
@@ -27,9 +28,11 @@
 .logo-footer__wrapper {
   display: flex;
   flex-direction: row;
+  padding-top: 14px;
 
   @media (max-width: $tablets-max) {
     padding-right: 37px;
+    padding-top: 0;
   }
 }
 
@@ -44,6 +47,11 @@
   flex-direction: column;
   padding-left: 12px;
   padding-top: 8px;
+
+  @media (max-width: $tablets-max) {
+    padding-left: 15px;
+    padding-top: 7px;
+  }
 }
 
 .logo-footer__text {

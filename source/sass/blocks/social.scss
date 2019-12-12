@@ -8,7 +8,7 @@
 .social__list {
   @include list;
   display: flex;
-  padding-top: 52px;
+  padding: 35px 0 0;
 
   @media (max-width: $tablets-max) {
     padding-top: 0;
