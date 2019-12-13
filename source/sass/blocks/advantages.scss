@@ -34,7 +34,7 @@
     background-color: #00b2ff;
     color: #ffffff;
 
-    .advantages__title {
+    h3 {
       color: #ffffff;
     }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.advantages__title {
+.advantages h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -68,7 +68,7 @@
   }
 }
 
-.advantages__info {
+.advantages p {
   font-size: 16px;
   line-height: 22px;
 

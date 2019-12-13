@@ -33,7 +33,7 @@
   background-repeat: no-repeat;
 }*/
 
-.info__header {
+.info h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -51,8 +51,7 @@
   }
 }
 
-.info__paragraph {
-  font-family: "PT Mono", "Arial", sans-serif;
+.info__inner p {
   font-style: normal;
   font-weight: normal;
   font-size: 22px;

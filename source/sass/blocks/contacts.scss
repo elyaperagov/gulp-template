@@ -18,6 +18,8 @@
   position: relative;
 
   &--phone {
+    padding-left: 123px;
+
     &::before {
       position: absolute;
       background-repeat: no-repeat;
@@ -59,11 +61,7 @@
     }
   }
 
-  &:nth-child(2) {
-    padding-left: 123px;
-  }
-
-  &:nth-child(3) {
+  &--callback {
     padding-left: 47px;
   }
 }

@@ -12,19 +12,6 @@
   }
 }
 
-.logo-footer__copyright {
-  display: none;
-
-  @media (max-width: $tablets-max) {
-    display: block;
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    margin: 0 auto;
-    text-transform: uppercase;
-  }
-}
-
 .logo-footer__wrapper {
   display: flex;
   flex-direction: row;

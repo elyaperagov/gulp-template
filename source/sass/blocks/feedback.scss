@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 
-.feedback__title {
+.feedback h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -33,21 +33,33 @@
   }
 }
 
-.feedback__paragraph {
+.feedback p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 33px;
+  padding-bottom: 47px;
 
   @media (max-width: $tablets-max) {
     padding-top: 17px;
   }
 }
 
-.feedback__field {
+.feedback__item {
+  padding-bottom: 32px;
+
+    @media (max-width: $tablets-max) {
+
+    }
+
+  &--textarea {
+    padding-bottom: 17px;
+  }
+}
+
+.feedback__item input {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   width: 270px;
@@ -58,7 +70,7 @@
   }
 }
 
-.feedback__text {
+.feedback__item textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   width: 570px;
@@ -129,15 +141,4 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.feedback__item {
-  @media (max-width: $tablets-max) {
-    margin-top: 21px;
-    margin-bottom: 10px;
-
-    &--textarea {
-      margin-bottom: 18px;
-    }
-  }
 }
