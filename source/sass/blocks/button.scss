@@ -35,6 +35,10 @@
       padding: 18px 32px;
       margin-top: 56px;
     }
+
+    @media (max-width: $mobiles-max) {
+      margin-top: 40px;
+    }
   }
 
   &--details {
@@ -51,7 +55,7 @@
   }
 
   &--question {
-    width: 270px;
+    width: 280px;
     border: 1px solid #ffffff;
   }
 }

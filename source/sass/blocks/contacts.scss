@@ -1,4 +1,4 @@
-.contacts__list {
+.contacts ul {
   @include list;
   font-size: 16px;
   line-height: 18px;
@@ -41,6 +41,10 @@
   }
 
   &--email {
+    @media (max-width: $mobiles-max) {
+      padding-left: 47px;
+    }
+
     &::before {
       position: absolute;
       background-repeat: no-repeat;

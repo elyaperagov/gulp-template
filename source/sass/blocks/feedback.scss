@@ -5,9 +5,9 @@
 
   @media (max-width: $tablets-max) {
     padding-top: 81px;
-    padding-left: 0;
+    padding-left: 7px;
     margin: 0 auto;
-    max-width: 590px;
+    max-width: 600px;
   }
 }
 
@@ -15,8 +15,13 @@
   border: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  width: 570px;
+
+  @media (max-width: $tablets-max) {
+    width: 590px;
+  }
 }
 
 .feedback h3 {
@@ -44,19 +49,16 @@
 
   @media (max-width: $tablets-max) {
     padding-top: 17px;
+    padding-bottom: 55px;
   }
 }
 
 .feedback__item {
   padding-bottom: 32px;
+}
 
-    @media (max-width: $tablets-max) {
-
-    }
-
-  &--textarea {
-    padding-bottom: 17px;
-  }
+.feedback__textarea {
+  padding-bottom: 17px;
 }
 
 .feedback__item input {
@@ -70,12 +72,13 @@
   }
 }
 
-.feedback__item textarea {
+.feedback__textarea textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   width: 570px;
   height: 154px;
   margin-top: 10px;
+  resize: none;
 
   @media (max-width: $tablets-max) {
     width: 591px;

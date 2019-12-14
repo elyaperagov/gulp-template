@@ -9,11 +9,11 @@
   color: #ffffff;
 
   @media (max-width: $tablets-max) {
-    padding: 50px 25px 28px;
+    padding: 50px 25px 31px;
   }
 }
 
-.offers__list {
+.offers__inner ul {
   @include list;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@
   }
 }
 
-.offers h3 {
+.offers__inner h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -49,6 +49,10 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+
+  @media (max-width: $tablets-max) {
+    padding: 40px 45px;
+  }
 }
 
 .offers__item {
@@ -65,10 +69,6 @@
     height: 63px;
     right: 0;
     bottom: 0;
-
-    @media (max-width: $tablets-max) {
-      bottom: 22px;
-    }
   }
 
   &::before {
@@ -83,14 +83,14 @@
     background-repeat: no-repeat;
 
     @media (max-width: $tablets-max) {
-      bottom: 50px;
+      bottom: 27px;
     }
   }
 
   @media (max-width: $tablets-max) {
     width: 100%;
-    height: 278.71px;
-    margin-bottom: 25px;
+    height: 258px;
+    margin-bottom: 45px;
     background-size: cover;
   }
 
@@ -115,6 +115,10 @@
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/equipment-tablet@1x.png");
+
+      p {
+        padding: 50px 45px;
+      }
     }
   }
 }

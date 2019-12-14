@@ -1,7 +1,7 @@
 .copyright {
   max-width: 1460px;
   margin: 0 auto;
-  padding: 0 25px 0 20px;
+  padding: 23px 25px;
   display: flex;
   font-style: normal;
   font-weight: normal;
@@ -9,6 +9,11 @@
   line-height: 24px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  text-decoration: none;
+
+  @media (max-width: $tablets-max) {
+    //padding: 23px 25px;
+  }
 }
 
 .copyright__inner {
@@ -16,16 +21,29 @@
   justify-content: space-between;
   width: 459px;
   margin-right: 140px;
+
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
 }
 
 .copyright__links {
   display: flex;
   justify-content: space-between;
   width: 58%;
+
+  @media (max-width: $tablets-max) {
+    width: 100%;
+  }
 }
 
 .copyright__inner p {
   margin: 0;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #1b2d37;
 }
 /*
 .copyright__list {

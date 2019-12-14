@@ -1,4 +1,4 @@
-.logo-header__title {
+.logo-header h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -9,18 +9,33 @@
   flex-direction: column;
   padding-left: 17px;
   padding-top: 7px;
+
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
 }
 
-.logo-header__text {
+.logo-header span {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   margin: 0;
+
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
 }
 
 .logo-header {
   display: flex;
   margin: 0 auto 0 0;
+}
+
+.logo-header svg {
+  @media (max-width: $mobiles-max) {
+    height: 38px;
+    width: 38px;
+  }
 }

@@ -19,7 +19,7 @@
   margin-bottom: 25px;
 }
 
-.contents__list {
+.contents__inner ul {
   @include list;
   display: flex;
   flex-direction: column;
