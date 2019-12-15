@@ -9,6 +9,10 @@
   @media (max-width: $tablets-max) {
     padding: 77px 0 160px;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding: 77px 0 69px;
+  }
 }
 
 .info__general {
@@ -22,8 +26,8 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 156px 0 0 20px;
-    max-width: 310px;
+    padding: 156px 20px 0;
+    max-width: 100%;
   }
 }
 /*
@@ -119,4 +123,18 @@
   top: 2px;
   left: 51px;
   z-index: 2;
+}
+
+.info__text {
+  &--tablet {
+    @media (max-width: $mobiles-max) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: $tablets) {
+      display: none;
+    }
+  }
 }
