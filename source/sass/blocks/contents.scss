@@ -36,6 +36,10 @@
   @media (max-width: $tablets-max) {
     flex-direction: column;
   }
+
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
 }
 
 .contents__link {

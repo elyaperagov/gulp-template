@@ -12,6 +12,12 @@
     width: 50%;
     padding-left: 15px;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 16px;
+  }
 }
 
 .footer-contacts h3 {
@@ -23,10 +29,26 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 23px;
+
+  @media (max-width: $mobiles-max) {
+    margin-bottom: 32px;
+  }
 }
 
 .footer-contacts__phone {
   text-decoration: none;
   color: #1b2d37;
   opacity: 0.5;
+
+  @media (max-width: $mobiles-max) {
+    //display: none;
+  }
+}
+
+.footer-contacts__address {
+  font-style: normal;
+
+  @media (max-width: $mobiles-max) {
+    padding-right: 5px;
+  }
 }

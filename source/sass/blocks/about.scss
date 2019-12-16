@@ -8,8 +8,8 @@
     padding: 25px 25px 54px;
   }
 
-  @media (max-width: $tablets-max) {
-    padding: 32px 12px 0 20px;
+  @media (max-width: $mobiles-max) {
+    padding: 32px 14px 60px 16px;
   }
 }
 
@@ -46,7 +46,7 @@
     margin: 3px 0 11px;
   }
 
-  @media (max-width: $tablets-max) {
+  @media (max-width: $mobiles-max) {
     font-size: 28px;
   }
 }
@@ -54,7 +54,7 @@
 .about__info p {
   margin: 22px 0;
 
-  @media (max-width: $tablets-max) {
+  @media (max-width: $mobiles-max) {
     margin: 22px 0 38px;
   }
 }

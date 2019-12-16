@@ -27,7 +27,7 @@
 
   @media (max-width: $mobiles-max) {
     flex-direction: column;
-    padding: 0 13px 0 20px;
+    padding: 0 14px 0 16px;
     margin: 0;
   }
 }
@@ -84,6 +84,18 @@
 
     path {
       fill: #ffffff;
+    }
+  }
+
+  &--confidentiality p {
+    @media (max-width: $tablets-max) {
+      margin-top: 14px;
+    }
+  }
+
+  &--price p {
+    @media (max-width: $tablets-max) {
+      margin-top: 8px;
     }
   }
 

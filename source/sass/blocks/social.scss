@@ -3,6 +3,11 @@
   justify-content: space-between;
   flex-basis: 65%;
   padding-top: 17px;
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
+    padding-top: 26px;
+  }
 }
 
 .social p {
@@ -12,7 +17,7 @@
     display: block;
     font-size: 13px;
     line-height: 24px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.5px;
     margin: 0 auto;
     text-transform: uppercase;
   }
@@ -26,6 +31,14 @@
   @media (max-width: $tablets-max) {
     padding-top: 0;
   }
+
+  @media (max-width: $mobiles-max) {
+    margin: 0 auto;
+    width: 53%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+  }
 }
 
 .social__item {
@@ -34,5 +47,10 @@
   @media (max-width: $tablets-max) {
     padding-right: 0;
     padding-left: 16px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

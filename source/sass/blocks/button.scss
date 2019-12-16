@@ -52,10 +52,23 @@
     @media (max-width: $tablets-max) {
       margin-top: 18px;
     }
+
+    @media (max-width: $mobiles-max) {
+      margin-top: -6px;
+    }
   }
 
   &--question {
-    width: 280px;
     border: 1px solid #ffffff;
+    padding: 14px 28px;
+    width: 47%;
+
+    @media (max-width: $tablets-max) {
+      width: 80%;
+    }
+
+    @media (max-width: $mobiles-max) {
+      width: 100%;
+    }
   }
 }

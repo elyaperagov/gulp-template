@@ -32,6 +32,10 @@
     flex-wrap: wrap;
     width: 100%;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding: 0 14px 35px 16px;
+  }
 }
 
 .footer__inner {
@@ -43,5 +47,10 @@
     padding-top: 50px;
     width: 100%;
     justify-content: space-between;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding-top: 65px;
+    flex-direction: column;
   }
 }

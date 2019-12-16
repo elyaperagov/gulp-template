@@ -10,6 +10,11 @@
     justify-content: space-between;
     padding-top: 15px;
   }
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
+    padding-top: 46px;
+  }
 }
 
 .logo-footer__wrapper {
@@ -20,6 +25,11 @@
   @media (max-width: $tablets-max) {
     padding-right: 37px;
     padding-top: 0;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding-right: 0;
+    margin: 0 auto;
   }
 }
 
