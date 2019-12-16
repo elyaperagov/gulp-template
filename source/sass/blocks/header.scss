@@ -1,16 +1,28 @@
 .header {
   background: #1b2d37;
-  background-image: url("../img/triangle.svg"), url("../img/chip.png"), url("../img/image.png");
-  background-size: cover, 705px 515px, cover;
+  background-image: url("../img/image.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 85.5% 71%;
   color: #ffffff;
+  position: relative;
 
   @media (max-width: $tablets-max) {
     background-image: url("../img/image.png");
     color: #ffffff;
     background-repeat: no-repeat;
     overflow-x: hidden;
+
+    /*
+    .header {
+      background: #1b2d37;
+      background-image: url("../img/triangle-background.svg"), url("../img/chip.png"), url("../img/image.png");
+      background-size: cover, 705px 515px, cover;
+      background-repeat: no-repeat;
+      background-position: 85.5% 71%;
+      color: #ffffff;
+      position: relative;
+    }*/
   }
 }
 

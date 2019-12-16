@@ -1,24 +1,81 @@
 .info {
   display: flex;
   flex-direction: row;
-  //position: relative;
+  position: relative;
   max-width: 1460px;
   margin: 0 auto;
   padding: 190px 0 275px 0;
 
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../img/chip.png");
+    width: 705px;
+    height: 515px;
+    right: -50px;
+    top: 176px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/chip@2x.png");
+      background-size: 700px auto;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../img/triangle-header.svg");
+    width: 707px;
+    height: 489px;
+    right: -62px;
+    top: 185px;
+    background-repeat: no-repeat;
+  }
+
   @media (max-width: $tablets-max) {
     padding: 77px 0 165px;
+
+    &::before {
+      background-image: url("../img/chip-tablet@1x.png");
+      right: -210px;
+      width: 465px;
+      height: 340px;
+      top: 40px;
+    }
+
+    &::after {
+      right: -171px;
+      width: 485px;
+      height: 495px;
+      top: 10px;
+    }
   }
 
   @media (max-width: $mobiles-max) {
     padding: 77px 0 69px;
+
+    &::before {
+      background-image: url("../img/chip-mobile@1x.png");
+      right: -12px;
+      width: 301px;
+      height: 220px;
+    }
+
+    &::after {
+      right: -312px;
+      width: 461px;
+      height: 529px;
+      top: 15px;
+    }
   }
 }
 
 .info__general {
   padding: 41px 0 0 19px;
   max-width: 740px;
-  position: relative;
 
   @media (max-width: $tablets-max) {
     padding: 41px 0 0 90px;
@@ -30,17 +87,6 @@
     max-width: 100%;
   }
 }
-/*
-.info__general::before {
-  position: absolute;
-  content: "";
-  display: block;
-  background-image: url("../img/triangle.svg");
-  z-index: 10;
-  width: 705px;
-  height: 515px;
-  background-repeat: no-repeat;
-}*/
 
 .info__general h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
