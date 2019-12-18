@@ -29,6 +29,11 @@
     left: 0;
     background-repeat: no-repeat;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/paper_airplane@2x.png");
+      background-size: 511px auto;
+    }
+
     @media (max-width: $tablets-max) {
       display: none;
     }

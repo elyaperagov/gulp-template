@@ -1,5 +1,18 @@
 .advantages {
   padding-top: 110px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/polygon-small.svg"), url("../img/polygon-big.svg");
+    width: 900px;
+    height: 1173px;
+    background-position: 404px 0, 202px 398px;
+    top: 46px;
+    left: -202px;
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: $tablets-max) {
     padding-top: 52px;

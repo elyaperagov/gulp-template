@@ -131,6 +131,15 @@
         background-size: 100% auto;
       }
     }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/production-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/production-mobile@2x.png");
+        background-size: 100% auto;
+      }
+    }
   }
 
   &--installation {
@@ -146,6 +155,15 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/installation-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/installation-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/installation-mobile@2x.png");
         background-size: 100% auto;
       }
     }
@@ -165,6 +183,15 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/equipment-tablet@2x.png");
         background-size: 100% auto;
+      }
+
+      @media (max-width: $mobiles-max) {
+        background-image: url("../img/equipment-mobile@1x.png");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/equipment-mobile@2x.png");
+          background-size: 100% auto;
+        }
       }
 
       p {
