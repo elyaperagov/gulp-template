@@ -16,9 +16,11 @@
 .about__picture {
   flex-shrink: 0;
   padding-top: 42px;
+  margin-left: -32px;
 
   @media (max-width: $tablets-max) {
     padding-top: 0;
+    margin-left: -26px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -26,11 +28,12 @@
   }
 }
 
+/*
 .about__picture img {
   @media (max-width: $tablets-max) {
     width: 133px;
   }
-}
+}*/
 
 .about__info h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;

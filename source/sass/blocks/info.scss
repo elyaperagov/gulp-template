@@ -10,7 +10,7 @@
     position: absolute;
     content: "";
     display: block;
-    background-image: url("../img/chip.png");
+    background-image: url("../img/chip-desktop@1x.png");
     width: 705px;
     height: 515px;
     right: -50px;
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/chip@2x.png");
+      background-image: url("../img/chip-desktop@2x.png");
       background-size: 700px auto;
     }
   }
@@ -44,6 +44,11 @@
       width: 465px;
       height: 340px;
       top: 40px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/chip-tablet@2x.png");
+        background-size: 260px auto;
+      }
     }
 
     &::after {
@@ -62,6 +67,11 @@
       right: -12px;
       width: 301px;
       height: 220px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/chip-mobile@2x.png");
+        background-size: 260px auto;
+      }
     }
 
     &::after {

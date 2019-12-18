@@ -112,7 +112,13 @@
     <section class="about">
       <div class="about__inner">
         <div class="about__picture">
-          <img src="img/2005.jpg" alt="2005">
+          <picture>
+            <!--<source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">-->
+            <source media="(max-width: 1023px)" srcset="img/2005-tablet@1x.jpg, img/2005-tablet@2x.jpg 2x">
+            <img src="img/2005-desktop@1x.jpg" srcset="img/2005-desktop@2x.jpg 2x" alt="Год основания 2005">
+          </picture>
         </div>
         <div class="about__info">
           <h3>О компании</h3>

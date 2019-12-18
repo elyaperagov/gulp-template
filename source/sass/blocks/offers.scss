@@ -116,26 +116,56 @@
   }
 
   &--production {
-    background-image: url("../img/production.png");
+    background-image: url("../img/production-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/production-desktop@2x.png");
+      background-size: 370px auto;
+    }
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/production-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/production-tablet@2x.png");
+        background-size: 100% auto;
+      }
     }
   }
 
   &--installation {
-    background-image: url("../img/installation.png");
+    background-image: url("../img/installation-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/installation-desktop@2x.png");
+      background-size: 370px auto;
+    }
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/installation-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/installation-tablet@2x.png");
+        background-size: 100% auto;
+      }
     }
   }
 
   &--equipment {
-    background-image: url("../img/equipment.png");
+    background-image: url("../img/equipment-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/equipment-desktop@2x.png");
+      background-size: 370px auto;
+    }
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/equipment-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/equipment-tablet@2x.png");
+        background-size: 100% auto;
+      }
 
       p {
         padding: 50px 45px;
