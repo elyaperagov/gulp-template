@@ -5,6 +5,7 @@
   max-width: 1460px;
   margin: 0 auto;
   padding: 190px 0 275px 0;
+  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -16,6 +17,7 @@
     right: -50px;
     top: 176px;
     background-repeat: no-repeat;
+    z-index: 10;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/chip-desktop@2x.png");

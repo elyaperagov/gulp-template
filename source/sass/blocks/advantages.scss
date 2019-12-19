@@ -1,25 +1,62 @@
+
 .advantages {
-  padding-top: 110px;
+  padding: 110px 25px 0 25px;
   position: relative;
+  margin: 0 auto;
+  max-width: 1220px;
 
   &::before {
     position: absolute;
     content: "";
-    background: url("../img/polygon-small.svg"), url("../img/polygon-big.svg");
-    width: 900px;
-    height: 1173px;
-    background-position: 404px 0, 202px 398px;
+    background: url("../img/polygon-small-before.svg"), url("../img/polygon-big-before.svg");
+    width: 700px;
+    height: 1115px;
+    background-position: 351px -4px, 151px 394px;
     top: 46px;
-    left: -202px;
+    left: -500px;
     background-repeat: no-repeat;
+    z-index: -1;
+
+    @media (max-width: $tablets-max) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/polygon-small-after.svg"), url("../img/polygon-big-after.svg");
+    width: 1200px;
+    height: 878px;
+    left: 450px;
+    background-position: 865px 458px, -237px 142px;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -1;
+
+    @media (max-width: $tablets-max) {
+      background: url("../img/polygon-big-after.svg");
+      width: 760px;
+      background-position: left;
+      height: 636px;
+      left: 210px;
+      top: 209px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      left: -118px;
+      top: 775px;
+    }
   }
 
   @media (max-width: $tablets-max) {
     padding-top: 52px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   @media (max-width: $mobiles-max) {
-    padding-top: 37px;
+    padding: 37px 14px 0 16px;
   }
 }
 
@@ -28,20 +65,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1220px;
-  padding: 0 25px;
   justify-content: space-between;
 
   @media (max-width: $tablets-max) {
-    padding: 0 25px;
     margin: 0;
   }
 
   @media (max-width: $mobiles-max) {
     flex-direction: column;
-    padding: 0 14px 0 16px;
-    margin: 0;
   }
 }
 
@@ -86,6 +117,7 @@
   border: 1px solid #ebebeb;
   padding: 40px 43px 50px;
   border-left: 2px solid #00b2ff;
+  background-color: #ffffff;
 
   &:hover {
     background-color: #00b2ff;

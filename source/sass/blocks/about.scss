@@ -1,8 +1,9 @@
 .about__inner {
   max-width: 1220px;
-  padding: 38px 25px 76px;
+  padding: 38px 25px 84px;
   margin: 0 auto;
   display: flex;
+  position: relative;
 
   @media (max-width: $tablets-max) {
     padding: 25px 25px 54px;
@@ -27,13 +28,6 @@
     display: none;
   }
 }
-
-/*
-.about__picture img {
-  @media (max-width: $tablets-max) {
-    width: 133px;
-  }
-}*/
 
 .about__info h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;

@@ -17,8 +17,8 @@
   }
 }
 
-.offers__inner ul {
-  @include list;
+.offers__wrapper {
+  //@include list;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

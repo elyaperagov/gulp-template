@@ -2,6 +2,7 @@
   color: #ffffff;
   padding-left: 51%;
   padding-top: 90px;
+  position: relative;
 
   @media (max-width: $tablets-max) {
     padding-top: 81px;
@@ -13,6 +14,38 @@
   @media (max-width: $mobiles-max) {
     padding-top: 34px;
     padding-left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/polygon-form-small.svg");
+    width: 234px;
+    height: 234px;
+    background-repeat: no-repeat;
+    right: -333px;
+    top: 91px;
+
+    @media (max-width: $tablets-max) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/polygon-form-big.svg");
+    width: 373px;
+    height: 373px;
+    background-repeat: no-repeat;
+    right: -552px;
+    top: 288px;
+
+    @media (max-width: $tablets-max) {
+      display: none;
+    }
   }
 }
 

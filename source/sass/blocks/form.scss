@@ -8,7 +8,6 @@
   position: relative;
   margin: 0 auto;
   padding: 0 25px 112px;
-  overflow: visible;
 
   @media (max-width: $tablets-max) {
     padding: 0 25px 107px;
@@ -28,6 +27,7 @@
     top: 159px;
     left: 0;
     background-repeat: no-repeat;
+    z-index: 10;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/paper_airplane@2x.png");
@@ -49,6 +49,7 @@
     background-repeat: no-repeat;
     left: -155px;
     top: 91px;
+
 
     @media (max-width: $tablets-max) {
       display: none;
