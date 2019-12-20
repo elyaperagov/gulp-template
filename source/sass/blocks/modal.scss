@@ -1,0 +1,18 @@
+.modal {
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal__container {
+  position: absolute;
+  width: 490px;
+  height: 605px;
+  background-color: #00b3ff;
+  top: 14%;
+  left: 37%;
+}

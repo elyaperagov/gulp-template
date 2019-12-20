@@ -1,15 +1,43 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var ESC_KEYCODE = 27;
+var ENTER_KEYCODE = 13;
 
-pageHeader.classList.remove('page-header--nojs');
+var modal = document.querySelector('.modal');
+var modalOpen = document.querySelector('.modal__open');
+var modalClose = modal.querySelector('.modal__close');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+var onPopupEscPress = function (evt) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    closePopup();
+  }
+};
+
+var openPopup = function () {
+  modal.classList.remove('hidden');
+  document.addEventListener('keydown', onPopupEscPress);
+};
+
+var closePopup = function () {
+  modal.classList.add('hidden');
+  document.removeEventListener('keydown', onPopupEscPress);
+};
+
+modalOpen.addEventListener('click', function () {
+  openPopup();
+});
+
+modalOpen.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === ENTER_KEYCODE) {
+    openPopup();
+  }
+});
+
+modalClose.addEventListener('click', function () {
+  closePopup();
+});
+
+modalClose.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === ENTER_KEYCODE) {
+    closePopup();
   }
 });

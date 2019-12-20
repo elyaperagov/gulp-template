@@ -25,6 +25,10 @@ a {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
