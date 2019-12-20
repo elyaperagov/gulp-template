@@ -33,7 +33,7 @@
     letter-spacing: 0.8px;
 
     @media (max-width: $tablets-max) {
-      padding: 18px 29px;
+      padding: 17px 31px;
       margin-top: 56px;
     }
 
@@ -48,10 +48,10 @@
     padding: 14px 50px;
     border: 1px solid #00b2ff;
     letter-spacing: 0.7px;
-    margin-top: 14px;
+    margin-top: 27px;
 
     @media (max-width: $tablets-max) {
-      margin-top: 18px;
+      margin-top: 40px;
     }
 
     @media (max-width: $mobiles-max) {
@@ -62,7 +62,7 @@
   &--question {
     border: 1px solid #ffffff;
     padding: 14px 28px;
-    width: 47%;
+    width: 47.5%;
 
     @media (max-width: $tablets-max) {
       width: 80%;

@@ -126,10 +126,11 @@
     h3 {
       color: #ffffff;
     }
+  }
 
-    path {
-      fill: #ffffff;
-    }
+  &:hover path,
+  &:focus path {
+    fill: #ffffff;
   }
 
   &--confidentiality p {
@@ -146,8 +147,8 @@
 
   @media (max-width: $tablets-max) {
     min-height: 232px;
-    width: 47.7%;
-    padding: 22px 16px 6px 27px;
+    width: 47.8%;
+    padding: 22px 17px 6px 27px;
   }
 
   /*@media (min-width: $tablets) {
@@ -181,5 +182,11 @@
         margin: 0;
       }
     }
+  }
+}
+
+.advantages__item span {
+  @media (max-width: $tablets-max) {
+    display: none;
   }
 }

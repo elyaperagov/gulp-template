@@ -1,7 +1,7 @@
 .feedback {
   color: #ffffff;
   padding-left: 51%;
-  padding-top: 90px;
+  padding-top: 89px;
   position: relative;
 
   @media (max-width: $tablets-max) {
@@ -207,11 +207,16 @@
 .feedback__label::before {
   position: absolute;
   content: "";
-  left: 41px;
-  top: 10px;
+  left: 7px;
+  top: 8px;
   border: 1px solid #ffffff;
   width: 16px;
   height: 16px;
+
+  @media (max-width: $tablets-max) {
+    left: 41px;
+    top: 10px;
+  }
 
   @media (max-width: $mobiles-max) {
     left: 0;
@@ -222,13 +227,18 @@
 .feedback__label::after {
   position: absolute;
   content: "";
-  left: 41px;
-  top: 10px;
+  left: 7px;
+  top: 8px;
   width: 16px;
   height: 16px;
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (max-width: $tablets-max) {
+    left: 41px;
+    top: 10px;
+  }
 
   @media (max-width: $mobiles-max) {
     left: 0;

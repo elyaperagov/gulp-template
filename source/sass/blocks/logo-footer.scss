@@ -1,7 +1,7 @@
 .logo-footer {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 29.9%;
 
   @media (max-width: $tablets-max) {
     display: flex;
@@ -42,8 +42,9 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding-left: 12px;
-  padding-top: 8px;
+  padding-left: 14px;
+  padding-top: 7px;
+
 
   @media (max-width: $tablets-max) {
     padding-left: 15px;
