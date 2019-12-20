@@ -5,7 +5,7 @@
   max-width: 1460px;
   margin: 0 auto;
   padding: 190px 0 275px 0;
-  overflow: hidden;
+  //padding: 190px 0 292px 0;
 
   &::before {
     position: absolute;
@@ -15,7 +15,7 @@
     width: 705px;
     height: 515px;
     right: -50px;
-    top: 176px;
+    top: 173px;
     background-repeat: no-repeat;
     z-index: 10;
 
@@ -32,17 +32,17 @@
     background-image: url("../img/triangle-header.svg");
     width: 707px;
     height: 489px;
-    right: -62px;
-    top: 185px;
+    right: -65px;
+    top: 187px;
     background-repeat: no-repeat;
   }
 
   @media (max-width: $tablets-max) {
-    padding: 77px 0 165px;
+    padding: 75px 0 165px;
 
     &::before {
       background-image: url("../img/chip-tablet@1x.png");
-      right: -210px;
+      right: -206px;
       width: 465px;
       height: 340px;
       top: 40px;
@@ -72,7 +72,7 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/chip-mobile@2x.png");
-        background-size: 260px auto;
+        background-size: 292px auto;
       }
     }
 
@@ -86,7 +86,7 @@
 }
 
 .info__general {
-  padding: 41px 0 0 19px;
+  padding: 39px 0 0 17px;
   max-width: 740px;
 
   @media (max-width: $tablets-max) {
@@ -95,7 +95,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 156px 20px 0;
+    padding: 156px 10px 0 23px;
     max-width: 100%;
   }
 }
@@ -120,6 +120,7 @@
   @media (max-width: $mobiles-max) {
     font-size: 40px;
     line-height: 47px;
+    margin-left: -2px;
   }
 }
 
@@ -129,15 +130,17 @@
   font-size: 22px;
   line-height: 34px;
   margin: 0;
+  //margin: 0 0 61px 0;
 
   @media (max-width: $tablets-max) {
     font-size: 18px;
     line-height: 156.8%;
+    //margin: 0 0 73px;
   }
 
   @media (max-width: $mobiles-max) {
     font-size: 16px;
-    padding: 28px 0 0 53px;
+    padding: 27px 0 0 48px;
   }
 }
 
@@ -146,41 +149,32 @@
   padding: 28px 0 0 97px;
 
   @media (max-width: $tablets-max) {
-    padding: 28px 0 0 53px;
+    padding: 28px 0 0 51px;
   }
 
   @media (max-width: $mobiles-max) {
     padding: 0;
   }
-}
 
-.info__inner::before {
-  position: absolute;
-  content: "";
-  background-color: #ffffff;
-  height: 2px;
-  width: 66px;
-  left: 5px;
-  top: 45px;
-
-  @media (max-width: $tablets-max) {
-    width: 33px;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
     height: 2px;
+    width: 66px;
+    left: 4px;
+    top: 45px;
+
+    @media (max-width: $tablets-max) {
+      width: 33px;
+      height: 2px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      left: 0;
+      top: 41px;
+    }
   }
-}
-
-.info__picture {
-  position: absolute;
-  right: 0;
-}
-
-.info__picture img {
-  position: relative;
-  width: 705px;
-  height: 515px;
-  top: 2px;
-  left: 51px;
-  z-index: 2;
 }
 
 .info__text {
@@ -196,3 +190,48 @@
     }
   }
 }
+
+.info__scroll {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  text-decoration: none;
+  top: 326px;
+  left: -34px;
+
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
+}
+
+/*
+если "получить консультацию" - ссылка
+.info__question {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background: #00b2ff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 18px 47px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.8px;
+
+  @media (max-width: $tablets-max) {
+    padding: 17px 31px;
+    margin-top: 56px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    margin-top: 41px;
+    padding: 19px 33px;
+  }
+}*/

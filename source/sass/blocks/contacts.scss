@@ -28,8 +28,8 @@
       background-size: cover;
       width: 18px;
       height: 18px;
-      left: 86px;
-      top: 2px;
+      left: 88px;
+      top: 0;
 
       @media (max-width: $tablets-max) {
         width: 22.54px;
@@ -52,9 +52,9 @@
       background-image: url("../img/email.svg");
       left: 17px;
       background-size: cover;
-      top: 2px;
-      width: 18px;
-      height: 18px;
+      top: 1px;
+      width: 20px;
+      height: 14px;
 
       @media (max-width: $tablets-max) {
         width: 25.33px;
@@ -66,7 +66,7 @@
   }
 
   &--callback {
-    padding-left: 47px;
+    padding-left: 50px;
   }
 }
 

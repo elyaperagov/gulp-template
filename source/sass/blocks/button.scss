@@ -13,10 +13,10 @@
 
   &--contacts {
     background-color: transparent;
-    padding: 14px 28px;
+    padding: 14px 27px;
     border: 1px solid #ffffff;
     letter-spacing: 0.7px;
-
+    transform: translateX(-2px);
 
     @media (max-width: $tablets-max) {
       display: none;
@@ -25,7 +25,7 @@
 
   &--info {
     border-radius: 5px;
-    padding: 18px 45px;
+    padding: 18px 47px;
     margin-top: 43px;
     font-weight: bold;
     font-size: 16px;
@@ -38,7 +38,8 @@
     }
 
     @media (max-width: $mobiles-max) {
-      margin-top: 40px;
+      margin-top: 41px;
+      padding: 19px 33px;
     }
   }
 

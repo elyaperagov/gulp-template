@@ -6,6 +6,7 @@
   background-position: 85.5% 71%;
   color: #ffffff;
   position: relative;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-background@2x.png");
@@ -16,6 +17,7 @@
     background-image: url("../img/header-background.png");
     color: #ffffff;
     background-repeat: no-repeat;
+    background-position: 51.9%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-background@2x.png");
@@ -33,10 +35,10 @@
   padding: 28px 25px 0 20px;
 
   @media (max-width: $tablets-max) {
-    padding: 12px 25px 0 25px;
+    padding: 16px 25px 0;
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 16px 12px 0 21px;
+    padding: 16px 9px 0 21px;
   }
 }
