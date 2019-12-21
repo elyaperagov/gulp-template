@@ -11,8 +11,38 @@
 .modal__container {
   position: absolute;
   width: 490px;
-  height: 605px;
+  min-height: 605px;
   background-color: #00b3ff;
   top: 14%;
   left: 37%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 39px;
+
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 39.38px;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  right: 27px;
+  top: 19px;
+  background-color: transparent;
+  cursor: pointer;
 }

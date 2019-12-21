@@ -3,7 +3,7 @@ var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
 var modal = document.querySelector('.modal');
-var modalOpen = document.querySelector('.modal__open');
+var modalOpen = document.querySelector('.button--contacts');
 var modalClose = modal.querySelector('.modal__close');
 
 var onPopupEscPress = function (evt) {
