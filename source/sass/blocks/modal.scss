@@ -13,7 +13,7 @@
   width: 490px;
   min-height: 605px;
   background-color: #00b3ff;
-  top: 14%;
+  top: 14.5%;
   left: 37%;
   display: flex;
   flex-direction: column;
@@ -41,8 +41,92 @@
   width: 17px;
   height: 17px;
   font-size: 0;
-  right: 27px;
+  right: 19px;
   top: 19px;
   background-color: transparent;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
   cursor: pointer;
+}
+
+.modal__item {
+  padding: 22px 0 10px 0;
+}
+
+.modal__item input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  height: 52px;
+  width: 100%;
+}
+
+.modal__textarea {
+  padding: 22px 0 10px 0;
+}
+
+.modal__textarea textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 100%;
+  min-height: 104px;
+  resize: none;
+}
+
+.modal__confirm {
+  padding-top: 11px;
+}
+
+.modal__form input[type="tel"]::placeholder,
+.modal__form input[type="text"]::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+  padding: 10px 22px;
+}
+
+.modal__form textarea::-webkit-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+  padding: 10px 22px;
+}
+
+.modal__form textarea::-moz-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+  padding: 10px 22px;
+}
+
+.modal__label {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 50px;
+  display: block;
+}
+
+.modal__checkbox {
+  padding-top: 33px;
+}
+
+.modal__label::before {
+  position: absolute;
+  content: "";
+  left: 2px;
+  top: 1px;
+  border: 1px solid #ffffff;
+  width: 16px;
+  height: 16px;
+}
+
+.modal__label::after {
+  position: absolute;
+  content: "";
+  left: 2px;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
