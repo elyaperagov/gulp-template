@@ -66,7 +66,7 @@
 
     &::before {
       background-image: url("../img/chip-mobile@1x.png");
-      right: -12px;
+      right: -7px;
       width: 301px;
       height: 220px;
 
@@ -77,7 +77,7 @@
     }
 
     &::after {
-      right: -312px;
+      right: -309px;
       width: 461px;
       height: 529px;
       top: 15px;
@@ -95,7 +95,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 156px 10px 0 23px;
+    padding: 156px 10px 0 17px;
     max-width: 100%;
   }
 }

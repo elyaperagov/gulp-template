@@ -224,7 +224,11 @@
   }
 }
 
-.feedback__label::after {
+.feedback__checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.feedback__checkbox input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   left: 7px;
@@ -244,4 +248,18 @@
     left: 0;
     top: 35px;
   }
+}
+
+.modal__checkbox input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 2px;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  z-index: 10;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
