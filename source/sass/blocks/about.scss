@@ -1,23 +1,23 @@
 .about__inner {
   max-width: 1220px;
-  padding: 38px 25px 89px;
+  padding: 38px 21px 89px;
   margin: 0 auto;
   display: flex;
   position: relative;
 
   @media (max-width: $tablets-max) {
-    padding: 21px 25px 70px;
+    padding: 23px 24px 70px;
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 32px 14px 60px 16px;
+    padding: 32px 14px 63px 16px;
   }
 }
 
 .about__picture {
   flex-shrink: 0;
   padding-top: 42px;
-  margin-left: -32px;
+  margin-left: -29px;
 
   @media (max-width: $tablets-max) {
     padding-top: 0;
@@ -45,6 +45,7 @@
 
   @media (max-width: $mobiles-max) {
     font-size: 28px;
+    margin: 5px 0 11px;
   }
 }
 
@@ -57,7 +58,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 22px 0 38px;
+    padding: 9px 0 30px;
   }
 }
 

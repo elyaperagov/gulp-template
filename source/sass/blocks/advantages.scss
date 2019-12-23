@@ -12,8 +12,8 @@
     width: 700px;
     height: 1115px;
     background-position: 351px -4px, 151px 394px;
-    top: 46px;
-    left: -500px;
+    top: 49px;
+    left: -503px;
     background-repeat: no-repeat;
     z-index: -1;
 
@@ -28,10 +28,10 @@
     background: url("../img/polygon-small-after.svg"), url("../img/polygon-big-after.svg");
     width: 1200px;
     height: 878px;
-    left: 450px;
-    background-position: 865px 458px, -237px 142px;
+    left: 446px;
+    background-position: 870px 458px, -237px 142px;
     background-repeat: no-repeat;
-    top: 0;
+    top: 4px;
     z-index: -1;
 
     @media (max-width: $tablets-max) {
@@ -44,8 +44,8 @@
     }
 
     @media (max-width: $mobiles-max) {
-      left: -118px;
-      top: 775px;
+      left: -119px;
+      top: 770px;
     }
   }
 
@@ -110,12 +110,30 @@
   }
 }
 
+.advantages__icon {
+  fill: #00b2ff;
+
+  @media (max-width: $mobiles-max) {
+    &--conf {
+      height: 27px;
+    }
+
+    &--price {
+      height: 32px;
+    }
+
+    &--suppliers {
+      height: 31px;
+    }
+  }
+}
+
 .advantages__item {
   min-height: 300px;
   width: 48.8%;
   margin-bottom: 30px;
   border: 1px solid #ebebeb;
-  padding: 40px 43px 50px;
+  padding: 40px 41px 50px;
   border-left: 2px solid #00b2ff;
   background-color: #ffffff;
 
@@ -128,15 +146,14 @@
     }
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .advantages__icon {
     fill: #ffffff;
   }
 
   @media (max-width: $tablets-max) {
     min-height: 232px;
     width: 47.8%;
-    padding: 22px 17px 6px 27px;
+    padding: 24px 20px 3px 24px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -152,8 +169,12 @@
   }
 
   &--confidentiality {
-    p {
-      @media (max-width: $tablets-max) {
+    padding: 42px 41px 50px;
+
+    @media (max-width: $tablets-max) {
+      padding: 23px 19px 8px 24px;
+
+      p {
         margin-top: 14px;
       }
     }
@@ -162,7 +183,7 @@
       padding: 25px 17px 7px 24px;
 
       h3 {
-        margin: 5px 0;
+        margin: 6px 0;
       }
 
       p {
@@ -174,11 +195,23 @@
   &--price {
     @media (max-width: $tablets-max) {
       p {
-        margin-top: 12px;
+        margin-top: 6px;
       }
 
       h3 {
-        margin: 0;
+        margin: 2px 0;
+      }
+    }
+
+    @media (max-width: $mobiles-max) {
+      padding: 26px 19px 11px 25px;
+
+      p {
+        margin-top: 8px;
+      }
+
+      h3 {
+        margin: 6px 0;
       }
     }
   }
@@ -188,7 +221,7 @@
       padding: 23px 10px 7px 24px;
 
       h3 {
-        margin: 8px 0;
+        margin: 10px 0;
       }
 
       p {
