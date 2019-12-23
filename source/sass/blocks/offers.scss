@@ -4,7 +4,7 @@
 
 .offers__inner {
   max-width: 1220px;
-  padding: 88px 25px 130px;
+  padding: 89px 25px 128px;
   margin: 0 auto;
   color: #ffffff;
 
@@ -13,12 +13,11 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 51px 14px 31px 16px;
+    padding: 51px 14px 37px 16px;
   }
 }
 
 .offers__wrapper {
-  //@include list;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +28,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 44px 0 0;
+    padding: 41px 0 0;
   }
 }
 
@@ -75,7 +74,7 @@
 .offers__item {
   position: relative;
   background-repeat: no-repeat;
-  width: 31.5%;
+  width: 31.7%;
   height: 620px;
 
   &::after {
@@ -101,6 +100,10 @@
 
     @media (max-width: $tablets-max) {
       bottom: 27px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      right: 27px;
     }
   }
 

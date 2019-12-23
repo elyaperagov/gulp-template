@@ -193,6 +193,10 @@
   }
 
   &--price {
+    h3 {
+      margin: 12px 0;
+    }
+
     @media (max-width: $tablets-max) {
       p {
         margin-top: 6px;

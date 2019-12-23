@@ -1,6 +1,6 @@
 .about__inner {
   max-width: 1220px;
-  padding: 38px 21px 89px;
+  padding: 35px 21px 89px;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -21,11 +21,17 @@
 
   @media (max-width: $tablets-max) {
     padding-top: 0;
-    margin-left: -26px;
+    margin-left: -34px;
   }
 
   @media (max-width: $mobiles-max) {
     display: none;
+  }
+}
+
+.about__picture img {
+  @media (max-width: $tablets-max) {
+    width: 169px;
   }
 }
 
@@ -51,7 +57,7 @@
 
 .about__info p {
   margin: 0;
-  padding: 8px 0 12px;
+  padding: 10px 0 12px;
 
   @media (max-width: $tablets-max) {
     padding: 16px 0 2px;
@@ -66,7 +72,7 @@
   padding: 0 10px 0 65px;
 
   @media (max-width: $tablets-max) {
-    padding: 0 10px 0 55px;
+    padding: 0 10px 0 52px;
   }
 
   @media (max-width: $mobiles-max) {
