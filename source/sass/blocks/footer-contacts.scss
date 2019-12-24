@@ -1,7 +1,4 @@
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -17,6 +14,22 @@
     padding-left: 0;
     width: 100%;
     padding-top: 16px;
+  }
+}
+
+.footer-contacts__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobiles-max) {
+    &--shown {
+      display: flex;
+    }
+
+    &--hidden {
+      display: none;
+    }
   }
 }
 

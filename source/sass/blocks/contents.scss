@@ -32,13 +32,46 @@
 .contents__inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   @media (max-width: $tablets-max) {
     flex-direction: column;
   }
 
   @media (max-width: $mobiles-max) {
-    display: none;
+    &--shown {
+      ul {
+        display: block;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: #c4c4c4;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 2px;
+        right: -141px;
+        top: -40px;
+      }
+    }
+
+    &--hidden {
+      ul {
+        display: none;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/plus.svg");
+        right: -141px;
+        top: -46px;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }
 
