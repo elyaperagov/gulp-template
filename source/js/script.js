@@ -5,7 +5,6 @@ var ENTER_KEYCODE = 13;
 var modal = document.querySelector('.modal');
 var modalOpen = document.querySelector('.button--contacts');
 var modalClose = modal.querySelector('.modal__close');
-
 var siteMap = document.querySelector('.contents__inner');
 var contents = document.querySelector('.contents');
 //  var contentsShown = document.querySelector('.contents__inner--shown');

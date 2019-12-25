@@ -1,6 +1,7 @@
 .footer {
   background-color: #fafafa;
   position: relative;
+  overflow: hidden;
 }
 
 .footer::after {
@@ -15,6 +16,10 @@
 
   @media (max-width: $tablets-max) {
     top: 384px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    display: none;
   }
 }
 
