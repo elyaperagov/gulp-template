@@ -5,7 +5,6 @@
   max-width: 1460px;
   margin: 0 auto;
   padding: 190px 0 275px 0;
-  //padding: 190px 0 292px 0;
 
   &::before {
     position: absolute;
@@ -130,12 +129,10 @@
   font-size: 22px;
   line-height: 34px;
   margin: 0;
-  //margin: 0 0 61px 0;
 
   @media (max-width: $tablets-max) {
     font-size: 18px;
     line-height: 156.8%;
-    //margin: 0 0 73px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -206,32 +203,3 @@
     display: none;
   }
 }
-
-/*
-если "получить консультацию" - ссылка
-.info__question {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  background: #00b2ff;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  padding: 18px 47px;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.8px;
-
-  @media (max-width: $tablets-max) {
-    padding: 17px 31px;
-    margin-top: 56px;
-  }
-
-  @media (max-width: $mobiles-max) {
-    margin-top: 41px;
-    padding: 19px 33px;
-  }
-}*/

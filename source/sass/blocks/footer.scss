@@ -27,9 +27,7 @@
   max-width: 1460px;
   margin: 0 auto;
   padding: 50px 25px 52px 21px;
-  //min-height: 279px;
   display: flex;
-  //justify-content: space-between;
 
   @media (max-width: $tablets-max) {
     padding: 0 25px 35px;
@@ -55,7 +53,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding-top: 65px;
+    padding-top: 63px;
     flex-direction: column;
   }
 }

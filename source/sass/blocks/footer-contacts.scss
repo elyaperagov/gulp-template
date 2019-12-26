@@ -96,10 +96,6 @@
   text-decoration: none;
   color: #1b2d37;
   opacity: 0.5;
-
-  @media (max-width: $mobiles-max) {
-    //display: none;
-  }
 }
 
 .footer-contacts__address {
