@@ -9,11 +9,11 @@
   padding: 0 25px 112px;
 
   @media (max-width: $tablets-max) {
-    padding: 0 25px 107px;
+    padding: 0 25px 104px;
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 0 14px 35px 16px;
+    padding: 0 14px 42px 16px;
   }
 
   &::before {
@@ -46,9 +46,8 @@
     width: 613px;
     height: 591px;
     background-repeat: no-repeat;
-    left: -155px;
-    top: 91px;
-
+    left: -158px;
+    top: 93px;
 
     @media (max-width: $tablets-max) {
       display: none;

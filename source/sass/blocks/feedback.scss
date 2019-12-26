@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding-top: 34px;
+    padding-top: 32px;
     padding-left: 0;
   }
 
@@ -83,6 +83,7 @@
 
   @media (max-width: $mobiles-max) {
     font-size: 28px;
+    transform: translate(0);
   }
 }
 
@@ -97,16 +98,21 @@
 
   @media (max-width: $tablets-max) {
     padding-top: 17px;
-    padding-bottom: 55px;
+    padding-bottom: 54px;
   }
 
   @media (max-width: $mobiles-max) {
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 26px;
   }
 }
 
 .feedback__item {
   padding-bottom: 32px;
+
+  @media (max-width: $mobiles-max) {
+    padding-bottom: 31px;
+  }
 }
 
 .feedback__textarea {
@@ -149,8 +155,7 @@
 }
 
 .form input[type="tel"],
-.form input[type="text"],
-.form textarea {
+.form input[type="text"] {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   padding: 12px 17px;
@@ -159,29 +164,29 @@
     font-family: "PT Mono", "Arial", sans-serif;
     color: #ffffff;
   }
+
+  @media (max-width: $tablets-max) {
+    padding: 4px 17px 14px;
+  }
 }
 
-/*
-.form input[type="tel"]::placeholder,
-.form input[type="text"]::placeholder {
-  color: #ffffff;
-  padding: 10px 17px;
-}
+.form textarea {
+  padding: 12px 17px;
 
-.form textarea::-webkit-input-placeholder {
-  color: #ffffff;
-  padding: 10px 17px;
+  &::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    color: #ffffff;
+  }
 }
-
-.form textarea::-moz-placeholder {
-  color: #ffffff;
-  padding: 10px 17px;
-}*/
 
 .feedback__confirm {
   display: flex;
   justify-content: space-between;
   padding-top: 17px;
+
+  @media (max-width: $tablets-max) {
+    padding-top: 20px;
+  }
 
   @media (max-width: $mobiles-max) {
     flex-direction: column;
@@ -195,7 +200,6 @@
 
   @media (max-width: $tablets-max) {
     width: 100%;
-    //padding-top: 27px;
   }
 }
 
@@ -212,7 +216,7 @@
 
   @media (max-width: $mobiles-max) {
     padding-left: 33px;
-    padding-top: 27px;
+    padding-top: 21px;
   }
 }
 
@@ -226,13 +230,13 @@
   height: 16px;
 
   @media (max-width: $tablets-max) {
-    left: 41px;
-    top: 10px;
+    left: 40px;
+    top: 3px;
   }
 
   @media (max-width: $mobiles-max) {
     left: 0;
-    top: 35px;
+    top: 22px;
   }
 }
 
@@ -252,26 +256,29 @@
   background-position: center center;
 
   @media (max-width: $tablets-max) {
-    left: 41px;
-    top: 10px;
+    left: 40px;
+    top: 3px;
   }
 
   @media (max-width: $mobiles-max) {
     left: 0;
-    top: 35px;
+    top: 22px;
   }
 }
 
-.modal__checkbox input[type="checkbox"]:checked + label::after {
-  position: absolute;
-  display: block;
-  content: "";
-  left: 2px;
-  top: 1px;
-  width: 16px;
-  height: 16px;
-  z-index: 10;
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+/*
+.form input[type="tel"]::placeholder,
+.form input[type="text"]::placeholder {
+  color: #ffffff;
+  padding: 10px 17px;
 }
+
+.form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  padding: 10px 17px;
+}
+
+.form textarea::-moz-placeholder {
+  color: #ffffff;
+  padding: 10px 17px;
+}*/
