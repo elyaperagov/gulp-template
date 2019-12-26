@@ -30,9 +30,11 @@
 
   @media (max-width: $tablets-max) {
     padding-top: 0;
+    transform: translateY(-5px);
   }
 
   @media (max-width: $mobiles-max) {
+    transform: none;
     margin: 0 auto;
     width: 53%;
     display: flex;

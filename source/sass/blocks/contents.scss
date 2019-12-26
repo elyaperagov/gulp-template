@@ -23,16 +23,25 @@
   margin-bottom: 25px;
   position: relative;
 
-  @media (max-width: $mobiles-max) {
+  @media (max-width: $tablets-max) {
     &::before {
       position: absolute;
       content: "";
       background-color: #626962;
-      width: 110%;
+      width: 230%;
       height: 1px;
       color: #1b2d37;
       opacity: 0.5;
-      top: -22px;
+      top: -39px;
+      left: -30px;
+    }
+  }
+
+  @media (max-width: $mobiles-max) {
+    &::before {
+      background-color: #626962;
+      width: 110%;
+      top: -29px;
       left: -20px;
     }
   }
@@ -71,7 +80,7 @@
         width: 16px;
         height: 2px;
         right: 3px;
-        top: -40px;
+        top: -33px;
       }
     }
 
@@ -85,7 +94,7 @@
         content: "";
         background-image: url("../img/plus.svg");
         right: 3px;
-        top: -46px;
+        top: -40px;
         background-repeat: no-repeat;
         width: 16px;
         height: 16px;
