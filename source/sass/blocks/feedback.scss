@@ -1,7 +1,7 @@
 .feedback {
   color: #ffffff;
   padding-left: 51%;
-  padding-top: 89px;
+  padding-top: 91px;
   position: relative;
 
   @media (max-width: $tablets-max) {
@@ -74,6 +74,7 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
+  transform: translateX(-4px);
 
   @media (max-width: $tablets-max) {
     font-size: 32px;
@@ -92,7 +93,7 @@
   line-height: 22px;
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 47px;
+  padding-bottom: 49px;
 
   @media (max-width: $tablets-max) {
     padding-top: 17px;
@@ -147,6 +148,20 @@
   }
 }
 
+.form input[type="tel"],
+.form input[type="text"],
+.form textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 12px 17px;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    color: #ffffff;
+  }
+}
+
+/*
 .form input[type="tel"]::placeholder,
 .form input[type="text"]::placeholder {
   color: #ffffff;
@@ -161,12 +176,12 @@
 .form textarea::-moz-placeholder {
   color: #ffffff;
   padding: 10px 17px;
-}
+}*/
 
 .feedback__confirm {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 17px;
 
   @media (max-width: $mobiles-max) {
     flex-direction: column;
@@ -176,6 +191,7 @@
 
 .feedback__checkbox {
   width: 270px;
+  margin-top: 8px;
 
   @media (max-width: $tablets-max) {
     width: 100%;
@@ -186,7 +202,9 @@
 .feedback__label {
   position: relative;
   display: block;
-  padding-left: 40px;
+  padding-left: 37px;
+  font-size: 14px;
+  line-height: 16px;
 
   @media (max-width: $tablets-max) {
     padding-left: 74px;
@@ -198,17 +216,11 @@
   }
 }
 
-.feedback__label span {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-
 .feedback__label::before {
   position: absolute;
   content: "";
-  left: 7px;
-  top: 8px;
+  left: 5px;
+  top: 4px;
   border: 1px solid #ffffff;
   width: 16px;
   height: 16px;
@@ -231,8 +243,8 @@
 .feedback__checkbox input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
-  left: 7px;
-  top: 8px;
+  left: 5px;
+  top: 4px;
   width: 16px;
   height: 16px;
   background-image: url("../img/tick.svg");

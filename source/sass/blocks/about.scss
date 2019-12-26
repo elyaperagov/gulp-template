@@ -6,13 +6,20 @@
   position: relative;
 
   @media (max-width: $tablets-max) {
-    padding: 23px 24px 70px;
+    padding: 23px 20px 68px 24px;
   }
 
   @media (max-width: $mobiles-max) {
     padding: 32px 14px 63px 16px;
   }
+
+  @media (min-width: $desktops) {
+    em {
+      display: none;
+    }
+  }
 }
+
 
 .about__picture {
   flex-shrink: 0;
@@ -46,7 +53,7 @@
   @media (max-width: $tablets-max) {
     font-size: 32px;
     line-height: 140.62%;
-    margin: 3px 0 11px;
+    margin: 3px 0 9px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -72,7 +79,7 @@
   padding: 0 10px 0 65px;
 
   @media (max-width: $tablets-max) {
-    padding: 0 10px 0 52px;
+    padding: 0 10px 0 53px;
   }
 
   @media (max-width: $mobiles-max) {

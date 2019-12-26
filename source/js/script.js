@@ -49,11 +49,13 @@ var onPopupEscPress = function (evt) {
 var openPopup = function () {
   modal.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
+  document.body.style.overflow = 'hidden';
 };
 
 var closePopup = function () {
   modal.classList.add('hidden');
   document.removeEventListener('keydown', onPopupEscPress);
+  document.body.style.overflow = 'visible';
 };
 
 modalOpen.addEventListener('click', function () {

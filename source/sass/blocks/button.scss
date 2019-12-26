@@ -62,8 +62,9 @@
 
   &--question {
     border: 1px solid #ffffff;
-    padding: 14px 28px;
+    padding: 14.5px 28px;
     width: 47.5%;
+    letter-spacing: 0.5px;
 
     @media (max-width: $tablets-max) {
       width: 80%;
