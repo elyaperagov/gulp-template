@@ -22,40 +22,46 @@
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+}
 
+.footer-contacts .show {
   @media (max-width: $mobiles-max) {
-    &--shown {
-      ul {
-        display: block;
-      }
+    position: relative;
 
-      &::before {
-        position: absolute;
-        content: "";
-        background-color: #c4c4c4;
-        background-repeat: no-repeat;
-        width: 16px;
-        height: 2px;
-        right: 3px;
-        top: -40px;
-      }
+    ul {
+      display: block;
     }
 
-    &--hidden {
-      ul {
-        display: none;
-      }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #c4c4c4;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 2px;
+      right: 3px;
+      top: -40px;
+    }
+  }
+}
 
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/plus.svg");
-        right: 3px;
-        top: -47px;
-        background-repeat: no-repeat;
-        width: 16px;
-        height: 16px;
-      }
+.footer-contacts .hide {
+  @media (max-width: $mobiles-max) {
+    position: relative;
+
+    ul {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/plus.svg");
+      right: 3px;
+      top: -47px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
     }
   }
 }

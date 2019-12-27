@@ -65,40 +65,46 @@
   @media (max-width: $tablets-max) {
     flex-direction: column;
   }
+}
 
+.contents .show {
   @media (max-width: $mobiles-max) {
-    &--shown {
-      ul {
-        display: block;
-      }
+    position: relative;
 
-      &::before {
-        position: absolute;
-        content: "";
-        background-color: #c4c4c4;
-        background-repeat: no-repeat;
-        width: 16px;
-        height: 2px;
-        right: 3px;
-        top: -33px;
-      }
+    ul {
+      display: block;
     }
 
-    &--hidden {
-      ul {
-        display: none;
-      }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #c4c4c4;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 2px;
+      right: 3px;
+      top: -33px;
+    }
+  }
+}
 
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/plus.svg");
-        right: 3px;
-        top: -40px;
-        background-repeat: no-repeat;
-        width: 16px;
-        height: 16px;
-      }
+.contents .hide {
+  @media (max-width: $mobiles-max) {
+    position: relative;
+
+    ul {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/plus.svg");
+      right: 3px;
+      top: -40px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
     }
   }
 }

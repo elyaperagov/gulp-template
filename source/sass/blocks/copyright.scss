@@ -10,6 +10,7 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 
   @media (max-width: $tablets-max) {
     padding: 22px 25px 19px 26px;
@@ -17,6 +18,18 @@
 
   @media (max-width: $mobiles-max) {
     padding: 20px 14px 16px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #626962;
+      width: 110%;
+      height: 1px;
+      color: #1b2d37;
+      opacity: 0.5;
+      top: -9px;
+      left: -20px;
+    }
   }
 }
 
