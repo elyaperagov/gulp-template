@@ -9,6 +9,29 @@ var contentsInner = document.querySelector('.contents__inner');
 var contents = document.querySelector('.contents');
 var contacts = document.querySelector('.footer-contacts');
 var contactsInner = document.querySelector('.footer-contacts__inner');
+var check = modal.querySelector('input[type="checkbox"]');
+var modalName = modal.querySelector('input[type="text"]');
+var modalTel = modal.querySelector('input[type="tel"]');
+var modalQuestion = modal.querySelector('#modal-text');
+
+var saveInLocalStorage = function () {
+  var data = {
+    name: modalName.value,
+    telephone: modalTel.value,
+    question: modalQuestion.value
+  };
+
+  localStorage.setItem('data', JSON.stringify(data));
+};
+
+check.addEventListener('click', function () {
+  saveInLocalStorage();
+});
+
+window.setTimeout(function () {
+  localStorage.removeItem('data');
+}, 2000);
+
 
 var contentsToggle = function (arg) {
   if (arg.classList.contains('show')) {
@@ -36,6 +59,7 @@ var onPopupEscPress = function (evt) {
 
 var openPopup = function () {
   modal.classList.remove('hidden');
+  modalName.focus();
   document.addEventListener('keydown', onPopupEscPress);
   document.body.style.overflow = 'hidden';
 };

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 611 487" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="triangle">
+            <g id="Group">
+                <polygon id="Path" stroke="#FFFFFF" opacity="0.2" points="605.84 5.584 331.17 481.334 56.49 5.584"></polygon>
+                <polygon id="Path" stroke="#FFFFFF" opacity="0.2" points="326.15 203.75 165.5 482 4.85 203.75"></polygon>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="56" cy="5" r="5"></circle>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="5" cy="204" r="5"></circle>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="166" cy="482" r="5"></circle>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="331" cy="481" r="5"></circle>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="606" cy="5" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
