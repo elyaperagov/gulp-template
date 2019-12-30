@@ -3,7 +3,7 @@ var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
 var modal = document.querySelector('.modal');
-var modalFrame = document.querySelector('.modal__frame')
+var modalFrame = document.querySelector('.modal__frame');
 var modalOpen = document.querySelector('.button--contacts');
 var modalClose = modal.querySelector('.modal__close');
 var contentsInner = document.querySelector('.contents__inner');
@@ -16,34 +16,24 @@ var modalQuestion = modal.querySelector('#modal-text');
 
 var saveInLocalStorage = function () {
   if (modalName.value && modalTel.value && modalQuestion.value) {
-  var data = {
-    name: modalName.value,
-    telephone: modalTel.value,
-    question: modalQuestion.value
-  };
+    var data = {
+      name: modalName.value,
+      telephone: modalTel.value,
+      question: modalQuestion.value
+    };
 
-  localStorage.setItem('data', JSON.stringify(data));
-  // console.log(data);
-  // var info = JSON.parse(localStorage.getItem('data'));
-  };
-}
+    localStorage.setItem('data', JSON.stringify(data));
+  }
+};
 
-var checkValidFields = function(a, b, c) {
-  a.onblur = function () {
-  if (a.value != null) {
-    saveInLocalStorage();
-    }
-  }
-  b.onblur = function () {
-  if (b.value != null) {
-    saveInLocalStorage();
-    }
-  }
-  c.onblur = function () {
-  if (c.value != null) {
-    saveInLocalStorage();
-    }
-  }
+var checkValidFields = function (a, b, c) {
+  [a, b, c].forEach(function (item) {
+    item.onblur = function () {
+      if (item.value !== null) {
+        saveInLocalStorage();
+      }
+    };
+  });
 };
 
 checkValidFields(modalName, modalTel, modalQuestion);
@@ -105,7 +95,7 @@ modalOpen.addEventListener('keydown', function (evt) {
   }
 });
 
-modalClose.addEventListener('click', function (evt) {
+modalClose.addEventListener('click', function () {
   closePopup();
 });
 

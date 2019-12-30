@@ -3,30 +3,41 @@ var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
 var modal = document.querySelector('.modal');
+var modalFrame = document.querySelector('.modal__frame');
 var modalOpen = document.querySelector('.button--contacts');
 var modalClose = modal.querySelector('.modal__close');
 var contentsInner = document.querySelector('.contents__inner');
 var contents = document.querySelector('.contents');
 var contacts = document.querySelector('.footer-contacts');
 var contactsInner = document.querySelector('.footer-contacts__inner');
-var check = modal.querySelector('input[type="checkbox"]');
 var modalName = modal.querySelector('input[type="text"]');
 var modalTel = modal.querySelector('input[type="tel"]');
 var modalQuestion = modal.querySelector('#modal-text');
 
 var saveInLocalStorage = function () {
-  var data = {
-    name: modalName.value,
-    telephone: modalTel.value,
-    question: modalQuestion.value
-  };
+  if (modalName.value && modalTel.value && modalQuestion.value) {
+    var data = {
+      name: modalName.value,
+      telephone: modalTel.value,
+      question: modalQuestion.value
+    };
 
-  localStorage.setItem('data', JSON.stringify(data));
+    localStorage.setItem('data', JSON.stringify(data));
+  }
 };
 
-check.addEventListener('click', function () {
-  saveInLocalStorage();
-});
+var checkValidFields = function (a, b, c) {
+  [a, b, c].forEach(function (item) {
+    item.onblur = function () {
+      if (item.value !== null) {
+        saveInLocalStorage();
+      }
+    };
+  });
+};
+
+checkValidFields(modalName, modalTel, modalQuestion);
+
 
 window.setTimeout(function () {
   localStorage.removeItem('data');
@@ -60,6 +71,8 @@ var onPopupEscPress = function (evt) {
 var openPopup = function () {
   modal.classList.remove('hidden');
   modalName.focus();
+  modalClose.addEventListener('click', closePopup);
+  modalFrame.addEventListener('click', closePopup);
   document.addEventListener('keydown', onPopupEscPress);
   document.body.style.overflow = 'hidden';
 };
@@ -67,6 +80,8 @@ var openPopup = function () {
 var closePopup = function () {
   modal.classList.add('hidden');
   document.removeEventListener('keydown', onPopupEscPress);
+  modalClose.removeEventListener('click', closePopup);
+  modalFrame.removeEventListener('click', closePopup);
   document.body.style.overflow = 'visible';
 };
 
