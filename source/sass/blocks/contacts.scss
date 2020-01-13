@@ -77,4 +77,9 @@
   @media (max-width: $tablets-max) {
     display: none;
   }
+
+  &:hover,
+  &focus {
+    color: #00b2ff;
+  }
 }

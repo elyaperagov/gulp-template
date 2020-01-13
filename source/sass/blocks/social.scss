@@ -43,6 +43,14 @@
   }
 }
 
+.social-icon {
+  fill: #cdcdcd;
+
+  &:hover {
+    fill: #00b2ff;
+  }
+}
+
 .social__item {
   padding-right: 16px;
 

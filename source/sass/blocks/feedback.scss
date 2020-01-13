@@ -218,6 +218,11 @@
     padding-left: 33px;
     padding-top: 21px;
   }
+
+  span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 .feedback__label::before {

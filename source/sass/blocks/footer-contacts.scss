@@ -102,6 +102,11 @@
   text-decoration: none;
   color: #1b2d37;
   opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    color: #00b2ff;
+  }
 }
 
 .footer-contacts__address {

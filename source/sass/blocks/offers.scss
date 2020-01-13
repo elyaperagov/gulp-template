@@ -77,6 +77,11 @@
   width: 31.7%;
   height: 620px;
 
+  &:hover,
+  &:focus {
+    border: 1px solid #ffffff;
+  }
+
   &::after {
     position: absolute;
     content: "";
