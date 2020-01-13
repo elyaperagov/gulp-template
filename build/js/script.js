@@ -13,6 +13,17 @@ var contactsInner = document.querySelector('.footer-contacts__inner');
 var modalName = modal.querySelector('input[type="text"]');
 var modalTel = modal.querySelector('input[type="tel"]');
 var modalQuestion = modal.querySelector('#modal-text');
+var info = document.querySelector('.button--info');
+var form = document.querySelector('.form');
+
+
+var handleButtonClick = function () {
+  form.scrollIntoView({
+    block: 'center', behavior: 'smooth'}
+  );
+};
+
+info.addEventListener('click', handleButtonClick);
 
 var saveInLocalStorage = function () {
   if (modalName.value && modalTel.value && modalQuestion.value) {
