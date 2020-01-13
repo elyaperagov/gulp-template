@@ -19,7 +19,24 @@
 
   &--phone {
     padding-left: 123px;
+  }
 
+  &--email {
+    @media (max-width: $mobiles-max) {
+      padding-left: 47px;
+    }
+  }
+
+  &--callback {
+    padding-left: 50px;
+  }
+}
+
+.contacts__link {
+  color: #ffffff;
+  text-decoration: none;
+
+  &--phone {
     &::before {
       position: absolute;
       background-repeat: no-repeat;
@@ -41,10 +58,6 @@
   }
 
   &--email {
-    @media (max-width: $mobiles-max) {
-      padding-left: 47px;
-    }
-
     &::before {
       position: absolute;
       background-repeat: no-repeat;
@@ -65,17 +78,10 @@
     }
   }
 
-  &--callback {
-    padding-left: 50px;
-  }
-}
-
-.contacts__link {
-  color: #ffffff;
-  text-decoration: none;
-
-  @media (max-width: $tablets-max) {
-    display: none;
+  span {
+    @media (max-width: $tablets-max) {
+      display: none;
+    }
   }
 
   &:hover,
