@@ -105,4 +105,10 @@
     width: 100%;
     letter-spacing: 0.5px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #00b2ff;
+  }
 }
