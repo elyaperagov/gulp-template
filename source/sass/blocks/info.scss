@@ -199,6 +199,12 @@
   top: 326px;
   left: -34px;
 
+  &:hover,
+  &focus {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   @media (max-width: $tablets-max) {
     display: none;
   }

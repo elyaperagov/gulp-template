@@ -154,10 +154,10 @@
 
   &--installation {
     background-image: url("../img/installation-desktop@1x.png");
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/installation-desktop@2x.png");
-      background-size: cover;
     }
 
     @media (max-width: $tablets-max) {
@@ -179,10 +179,10 @@
 
   &--equipment {
     background-image: url("../img/equipment-desktop@1x.png");
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/equipment-desktop@2x.png");
-      background-size: cover;
     }
 
     @media (max-width: $tablets-max) {

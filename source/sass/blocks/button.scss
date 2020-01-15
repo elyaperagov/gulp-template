@@ -62,18 +62,18 @@
     letter-spacing: 0.7px;
     margin-top: 27px;
 
+    &:hover,
+    &:focus {
+      background-color: #00b2ff;
+      color: #ffffff;
+    }
+
     @media (max-width: $tablets-max) {
       margin-top: 40px;
     }
 
     @media (max-width: $mobiles-max) {
       margin-top: 0;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: #00b2ff;
-      color: #ffffff;
     }
   }
 
@@ -104,11 +104,11 @@
     padding: 15px 28px;
     width: 100%;
     letter-spacing: 0.5px;
-  }
 
-  &:hover,
-  &:focus {
-    background-color: #ffffff;
-    color: #00b2ff;
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #00b2ff;
+    }
   }
 }
