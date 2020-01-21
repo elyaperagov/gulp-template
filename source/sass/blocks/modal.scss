@@ -112,10 +112,14 @@
   padding-left: 50px;
   display: block;
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-    cursor: pointer;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
 
@@ -134,7 +138,7 @@
 }
 
 .modal__checkbox input[type="checkbox"] {
-  display: none;
+  margin: 12px;
 }
 
 .modal__checkbox input[type="checkbox"]:checked + label::after {

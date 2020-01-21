@@ -220,9 +220,14 @@
     padding-top: 21px;
   }
 
-  span:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
 
@@ -246,11 +251,11 @@
   }
 }
 
-.feedback__checkbox input[type="checkbox"] {
-  display: none;
+.feedback__confirm input[type="checkbox"] {
+  margin: 12px;
 }
 
-.feedback__checkbox input[type="checkbox"]:checked + label::after {
+.feedback__confirm input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   left: 5px;
