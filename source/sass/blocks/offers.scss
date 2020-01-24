@@ -20,7 +20,6 @@
 .offers__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px 0 0;
 
@@ -75,11 +74,16 @@
 .offers__item {
   position: relative;
   background-repeat: no-repeat;
-  width: 31.7%;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
   min-height: 620px;
   margin-bottom: 30px;
   color: #ffffff;
   text-decoration: none;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   &:hover,
   &:focus {

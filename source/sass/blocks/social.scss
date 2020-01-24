@@ -1,8 +1,12 @@
 .social {
   display: flex;
   justify-content: space-between;
-  flex-basis: 65%;
   padding-top: 17px;
+  flex-basis: 65%;
+
+  @media (min-width: $desktops) {
+    max-width: 120px;
+  }
 
   @media (max-width: $mobiles-max) {
     flex-direction: column;
