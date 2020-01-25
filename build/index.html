@@ -81,7 +81,7 @@
   <header class="header">
     <div class="header__inner">
       <div class="logo-header">
-        <svg width="52" height="52">
+        <svg width="52" height="52" aria-label="Логотип Smart Device">
           <use xlink:href="#logo"></use>
         </svg>
         <h1>Smart Device<span>умные технологии</span></h1>
@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="contacts__item contacts__item--callback">
-            <button type="button" class="button button--contacts">Заказать звонок</button>
+            <button type="button" class="button button--contacts" aria-label="Заказать звонок">Заказать звонок</button>
           </li>
         </ul>
       </div>
@@ -107,7 +107,7 @@
     <div class="modal hidden">
       <div class="modal__container">
         <h2>Закажите звонок</h2>
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" aria-label="Закрыть окно">
           Закрыть
         </button>
         <p>Оставьте контакты, мы проконсультируем<br> вас бесплатно в удобное время</p>
@@ -115,19 +115,19 @@
           <div class="modal__fieldset">
             <div class="modal__item">
               <label class="visually-hidden" for="modal-name">Ваше имя:</label>
-              <input id="modal-name" name="name" type="text" placeholder="Имя" required="">
+              <input id="modal-name" name="name" type="text" placeholder="Имя" aria-label="Ваше имя" required="">
             </div>
             <div class="modal__item">
               <label class="visually-hidden" for="modal-phone">Ваш телефон:</label>
-              <input id="phone" name="phone" type="tel" placeholder="Телефон" required="">
+              <input id="modal-phone" name="phone" type="tel" placeholder="Телефон" aria-label="Ваш телефон" required="">
             </div>
           </div>
           <div class="modal__textarea">
             <label class="visually-hidden" for="modal-text">Ваш вопрос</label>
-            <textarea id="modal-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
+            <textarea id="modal-text" name="text" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required=""></textarea>
           </div>
           <div class="modal__confirm">
-            <button class="button button--modal" type="submit">Отправить</button>
+            <button class="button button--modal" type="submit" aria-label="Отправить">Отправить</button>
             <div class="modal__checkbox">
               <input type="checkbox" id="modal-confirm" name="confirm" checked="" class="visually-hidden" required="">
               <label class="modal__label" for="modal-confirm"><a href="#">Я согласен на обработку &nbsp;персональных данных</a></label>
@@ -143,7 +143,7 @@
         <h2>Печатные платы</h2>
         <div class="info__inner">
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button type="button" class="button button--info">
+          <button type="button" class="button button--info" aria-label="Консультация">
             <span class="info__text info__text--tablet">Получить бесплатную консультацию</span>
             <span class="info__text info__text--mobile">Бесплатная консультация</span>
           </button>
@@ -205,7 +205,7 @@
               <span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
               Среди наших клиентов крупнейшие Производители светотехники России.</span>
             </p>
-            <button type="button" class="button button--details">Подробнее</button>
+            <button type="button" class="button button--details" aria-label="Подробнее">Подробнее</button>
           </div>
         </div>
       </section>
@@ -238,7 +238,7 @@
             </div>
             <div class="feedback__item">
               <label class="visually-hidden" for="feedback-phone">Ваш телефон:</label>
-              <input id="phone" class="tel" name="phone" type="tel" Телефон"="" required="">
+              <input id="feedback-phone" class="tel" name="phone" type="tel" placeholder="Телефон" required="">
             </div>
           </div>
           <div class="feedback__textarea">
@@ -246,7 +246,7 @@
             <textarea id="feedback-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
           </div>
           <div class="feedback__confirm">
-            <button class="button button--question" type="submit">Задать вопрос</button>
+            <button class="button button--question" type="submit" aria-label="Задать вопрос">Задать вопрос</button>
             <div class="feedback__checkbox">
               <input type="checkbox" id="feedback-confirm" name="confirm" class="visually-hidden" required="">
               <label class="feedback__label" for="feedback-confirm">
@@ -371,7 +371,8 @@
         </div>
       </div>
   </footer>
-  <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/mask.js" type="text/javascript">></script>
+  <script src="js/script.min.js" type="text/javascript"></script>
+  <script src="js/mask.min.js" type="text/javascript"></script>
+  <script src="js/picturefill.min.js" type="text/javascript"></script>
 </body>
 </html>
