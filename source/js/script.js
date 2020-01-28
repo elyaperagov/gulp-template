@@ -17,7 +17,7 @@ var modalQuestion = modal.querySelector('#modal-text');
 var info = document.querySelector('.button--info');
 var form = document.querySelector('.form');
 var scroll = document.querySelector('.info__scroll');
-var about = document.querySelector('.about');
+var advantages = document.querySelector('.advantages');
 
 info.addEventListener('click', function () {
   form.scrollIntoView({
@@ -26,7 +26,7 @@ info.addEventListener('click', function () {
 });
 
 scroll.addEventListener('click', function () {
-  about.scrollIntoView({
+  advantages.scrollIntoView({
     block: 'center', behavior: 'smooth'}
   );
 });

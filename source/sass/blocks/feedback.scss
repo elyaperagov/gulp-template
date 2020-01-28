@@ -113,6 +113,10 @@
   @media (max-width: $mobiles-max) {
     padding-bottom: 31px;
   }
+
+  label {
+    display: none;
+  }
 }
 
 .feedback__textarea {

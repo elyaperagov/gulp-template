@@ -67,6 +67,10 @@
 
 .modal__item {
   padding: 22px 0 10px 0;
+
+  label {
+    display: none;
+  }
 }
 
 .modal__item input {
