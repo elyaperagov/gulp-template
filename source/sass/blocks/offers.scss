@@ -9,7 +9,7 @@
   color: #ffffff;
 
   @media (max-width: $tablets-max) {
-    padding: 50px 25px 31px;
+    padding: 51px 25px 32px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -94,8 +94,8 @@
     position: absolute;
     content: "";
     background-color: #00b2ff;
-    width: 63px;
-    height: 63px;
+    width: 64px;
+    height: 64px;
     right: 0;
     bottom: 0;
   }
@@ -134,6 +134,10 @@
   &--production {
     background-image: url("../img/production-desktop@1x.png");
     background-size: cover;
+
+    @media (max-width: $tablets-max) {
+      width: 99.5%;
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/production-desktop@2x.png");

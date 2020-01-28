@@ -22,8 +22,12 @@
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0.5px;
-    margin: 0 auto;
+    margin: 0 auto 0 50px;
     text-transform: uppercase;
+  }
+
+  @media (max-width: $mobiles-max) {
+    margin: 0 auto;
   }
 }
 

@@ -37,7 +37,7 @@
   }
 
   @media (max-width: $tablets-max) {
-    padding: 75px 0 165px;
+    padding: 77px 0 164px;
 
     &::before {
       background-image: url("../img/chip-tablet@1x.png");
@@ -90,7 +90,7 @@
   z-index: 2;
 
   @media (max-width: $tablets-max) {
-    padding: 41px 0 0 88px;
+    padding: 40px 0 0 88px;
     max-width: 600px;
   }
 

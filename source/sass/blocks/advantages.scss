@@ -102,10 +102,10 @@
   line-height: 22px;
 
   @media (max-width: $tablets-max) {
-    margin-top: 10px;
+    margin-top: 9px;
   }
 
-  @media (max-width: $tablets-max) {
+  @media (max-width: $mobiles-max) {
     margin-top: 10px;
   }
 }
@@ -172,7 +172,7 @@
     padding: 42px 41px 50px;
 
     @media (max-width: $tablets-max) {
-      padding: 23px 19px 8px 24px;
+      padding: 25px 19px 8px 24px;
 
       p {
         margin-top: 14px;
@@ -180,7 +180,7 @@
     }
 
     @media (max-width: $mobiles-max) {
-      padding: 25px 17px 7px 24px;
+      padding: 26px 17px 7px 24px;
 
       h3 {
         margin: 6px 0;

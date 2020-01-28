@@ -81,8 +81,13 @@
   margin-bottom: 23px;
   position: relative;
 
+  @media (max-width: $tablets-max) {
+    margin-left: 2px;
+  }
+
   @media (max-width: $mobiles-max) {
     margin-bottom: 32px;
+    margin-left: 0;
 
     &::before {
       position: absolute;
