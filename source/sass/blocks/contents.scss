@@ -61,6 +61,12 @@
   line-height: 25px;
 }
 
+// .contents__inner ul:first-child {
+//   @media (width: 1024px) {
+//     width: 175px;
+//   }
+// }
+
 .contents__inner {
   display: flex;
   justify-content: space-between;
@@ -118,8 +124,7 @@
   color: #1b2d37;
   opacity: 0.5;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #00b2ff;
   }
 }
