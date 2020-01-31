@@ -22,6 +22,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+
+  @media (min-width: $desktops) {
+    ul {
+      transform: translateX(-4px);
+    }
+  }
 }
 
 .footer-contacts .show {
