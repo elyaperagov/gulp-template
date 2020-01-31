@@ -44,9 +44,9 @@
   @media (max-width: $mobiles-max) {
     transform: none;
     margin: 0 auto;
-    width: 49%;
+    width: 48%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 33px;
   }
 }
